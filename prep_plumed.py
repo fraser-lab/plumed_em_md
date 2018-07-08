@@ -1,4 +1,9 @@
-input_pdb = "/home/jfraser/working_with_max/07012018_AC_SYMM/AC_SYMM.pdb"
+import argparse
+parser = argparse.ArgumentParser()
+parser.add_argument("--input_pdb", help="full path to the input pdb for simulation")
+args = parser.parse_args()
+input_pdb = args.input_pdb
+
 
 import os
 os.system("printf \"9\n1\" | gmx_mpi pdb2gmx -f {pdb} -ignh".format(pdb=input_pdb))
@@ -6,7 +11,7 @@ os.system("gmx_mpi editconf -f conf.gro -bt dodecahedron -d 1.0 -o conf_box.gro"
 os.system("printf \"0\n0\" | gmx_mpi trjconv -f conf_box.gro -s conf.gro -fit translation -o conf_box_oriented.gro")
 os.system("gmx_mpi solvate -cp conf_box_oriented.gro -cs spc216.gro -p topol.top -o conf_water.gro")
 os.system("gmx_mpi grompp -f em_2016.mdp -c conf_water.gro")
-os.system("gmx_mpi mdrun -c conf_emin.gro")
+os.system("gmx_mpi mdrun -c conf_emin.gro -ntomp 16")
 os.system("gmx_mpi grompp -f npt_2016.mdp -c conf_emin.gro")
 
 #this one takes some time

@@ -1,5 +1,10 @@
-map_plumed_dat_file = "AC-SYMM-GM-PLUMED.dat"
-n_proc = 48
+import argparse
+parser = argparse.ArgumentParser()
+parser.add_argument("--map_dat", help="full path to the GMM dat file for the map")
+parser.add_argument("--n_proc", help="number of threads to use")
+args = parser.parse_args()
+map_plumed_dat_file = args.map_dat
+n_proc = args.n_proc
 
 import os
 
