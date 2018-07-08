@@ -1,7 +1,7 @@
 from multiprocessing import Pool
 import os
 gmconvert_location = "/home/jfraser/gmconvert/gmconvert"
-sbgrid_gmconvert = "/programs/x86_64-linux/system/sbgrid_bin/gmconvert"
+sbgrid_gmconvert = "/programs/x86_64-linux/gmconvert/20180516/bin/gmconvert"
 
 import argparse, sys
 parser = argparse.ArgumentParser()
