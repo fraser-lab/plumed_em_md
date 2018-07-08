@@ -7,6 +7,46 @@ from subprocess import check_output
 out = check_output(["sed '3q;d' conf_box_oriented.gro"],shell=True)
 ref = ",".join(out.split()[-3:])
 
+#create protein-no-negative group in index.ndx
+conf_in = open("conf_box_oriented.gro")
+negative_charges = ["OD1","OD2","OE1","OE2"]
+negative_residues = ["ASP","GLU"]
+negative_atoms = []
+for line in conf_in:
+    try:
+        if line.split()[1] in negative_charges and line.split()[0][-3:] in negative_residues:
+            negative_atoms.append(line.split()[2])
+    except:
+        pass
+
+os.system("cp index.ndx index.ndx_BACKUP")
+index_file = open("index.ndx","r+")
+in_protein = 0
+protein_atoms = []
+for line in index_file:
+    if "[ C-alpha ]" in line:
+        in_protein = 0
+    if in_protein:
+        protein_atoms.extend(line.split())
+    if "[ Protein-H ]" in line:
+        in_protein = 1
+
+for negative_atom in negative_atoms:
+    protein_atoms.remove(negative_atom)
+
+index_file.write("[ Protein-no-negative-no-h ]\n")
+i = 1
+newline = ""
+for atom in protein_atoms:
+    newline = newline + atom + " "
+    i +=1
+    if i % 15 == 0:
+        index_file.write(newline)
+        index_file.write("\n")
+        newline = ""
+index_file.write(newline)
+index_file.close()
+
 from multiprocessing import Pool
 
 def create_topols(i):
@@ -25,6 +65,7 @@ MOLINFO STRUCTURE=structure.pdb
 # which can be created with gmx_mpi make_ndx
 protein-h: GROUP NDX_FILE=index.ndx NDX_GROUP=Protein-H
 protein: GROUP NDX_FILE=index.ndx NDX_GROUP=Protein
+protein-no-negative: GROUP NDX_FILE=index.ndx NDX_GROUP=Protein-no-negative-no-h
 # water: GROUP NDX_FILE=index.ndx NDX_GROUP=Water
 # make protein whole: add reference position of first heavy atom (in nm)
 WHOLEMOLECULES ADDREFERENCE ENTITY0=protein REF0={ref}
@@ -32,7 +73,9 @@ WHOLEMOLECULES ADDREFERENCE ENTITY0=protein REF0={ref}
 # create EMMI score
 EMMI ...
 LABEL=gmm NOPBC TEMP=300.0 NL_STRIDE=50 NL_CUTOFF=0.01
-ATOMS=protein-h GMM_FILE={map_dat}
+ATOMS=protein-no-negative GMM_FILE={map_dat}
+#ATOMS selects what is refined
+# no-negative-no-h or no-h are reasonable
 # resolution is not used - no Bfactor fitting
 # SIGMA_MIN can go down to 0.02, must be > NL_CUTOFF,
 # if crashes, raise back to 0.05,
