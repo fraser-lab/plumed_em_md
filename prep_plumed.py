@@ -1,9 +1,8 @@
-import argparse
+import argparse, sys
 parser = argparse.ArgumentParser()
-parser.add_argument("--input_pdb", help="full path to the input pdb for simulation")
+parser.add_argument("--input_pdb", help="full path to the input pdb for simulation",required=True)
 args = parser.parse_args()
 input_pdb = args.input_pdb
-
 
 import os
 os.system("printf \"9\n1\" | gmx_mpi pdb2gmx -f {pdb} -ignh".format(pdb=input_pdb))
