@@ -1,6 +1,5 @@
 from multiprocessing import Pool
 import os
-n_proc = 48
 gmconvert_location = "/home/jfraser/gmconvert/gmconvert"
 sbgrid_gmconvert = "/programs/x86_64-linux/system/sbgrid_bin/gmconvert"
 
@@ -10,7 +9,7 @@ parser.add_argument("--input_map", help="full path to the input map for simulati
 parser.add_argument("--n_proc", help="number of threads to use",required=True)
 args = parser.parse_args()
 
-n_proc = args.n_proc
+n_proc = int(args.n_proc)
 input_map = args.input_map
 
 os.system("{gmconvert} -imap {map} -oimap output-0.0.mrc -zth 0.0".format(map=input_map, gmconvert=gmconvert_location))
