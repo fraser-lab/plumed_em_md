@@ -5,6 +5,7 @@ requires:
 - GROMACS 2016.5 (http://ftp.gromacs.org/pub/gromacs/gromacs-2016.5.tar.gz)
 - gmmconvert (from Max)
 - gmmconvert (from sbgrid)
+- CHARMM forcefield (for ALY)
 
 
 Scripts to make running a PLUMED EM MD simulation (https://doi.org/10.1016/j.bpj.2018.02.028) much easier.
