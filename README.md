@@ -10,23 +10,21 @@ requires:
 
 Scripts to make running a PLUMED EM MD simulation (https://doi.org/10.1016/j.bpj.2018.02.028) much easier.
 
-Copy into working directory:
+Given:
+- Input PDB (cleaned of heteroatoms)
+- Input Map (MRC format)
 
-Input pdb
-Input Map
-em_2016.mdp
-npt_2016.mdp
-nvt_2016_EQUIL.mdp
-nvt_2016.mdp
+prep_directory.py - copies instruction files into working directory:
+- em_2016.mdp
+- npt_2016.mdp
+- nvt_2016_EQUIL.mdp
+- nvt_2016.mdp
 
-Prepare map:
-Generate_gmm.py (set input map, gmconvert locations)
-convert_GMM2PLUMED.sh (generates input gmm.dat file)
+generate_gmm.py - prepares map in gmm format
+convert_GMM2PLUMED.sh - generates input gmm.dat file for plumed (from Max)
 
-Prepare md simulation:
-Prep_plumed.py (set input pdb)
-Prep_plumed_2.py
-Prep_plumed_3.py (set input gmm.dat file)
+Prep_plumed.py - equilibrates
+Prep_plumed_2.py - sets up simulation
+Prep_plumed_3.py - outputs command to run simulation
 
-Analyze md simulation:
-generate_trajectories_as_pdbs.py
+generate_trajectories_as_pdbs.py - outputs md simulation as gro or pdb files
