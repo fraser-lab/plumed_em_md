@@ -1,0 +1,41 @@
+#!/bin/bash
+#PBS -N ClpP_clustering 
+#PBS -l nodes=1:ppn=1
+#PBS -l walltime=72:00:00
+#PBS -q l1
+#PBS -o pbs.out
+#PBS -e pbs.err
+#PBS -m a
+#PBS -V
+
+# Write useful stuff
+date
+echo "Starting job $PBS_JOBID"
+echo
+echo "$SHELL"
+
+echo "PBS assigned me these nodes:"
+cat $PBS_NODEFILE
+echo
+echo Running on:
+echo `uname -a`
+echo
+echo at `date`
+echo
+
+# go to right directory
+cd $PBS_O_WORKDIR
+
+# executable
+EXE=/sharedscratch/mb2006/ClpP/CLUSTERING/ALL-HEAVY/GROMOS/gromos_clustering.x
+
+# rmsd matrix
+RMSD_MATRIX=/sharedscratch/mb2006/ClpP/CLUSTERING/ALL-HEAVY/RMSD_MATRIX/RMSD
+
+# do clustering - 64 is equal to the total number of tasks
+# used in the rmsd matrix calculation
+# 2.5 is the cutoff in Angrstrom
+# 23885 is the total number of frames N in the trajectory 
+$EXE $RMSD_MATRIX 64 2.5 23885
+
+echo Finished at `date`
