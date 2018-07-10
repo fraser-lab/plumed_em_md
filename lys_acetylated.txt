@@ -1,0 +1,25 @@
+NAME acetylated
+
+TYPES ACETYLATION
+
+
+
+## general requirements for this patch
+
+
+
+BEGIN_SELECTOR
+
+PROPERTY PROTEIN
+
+AA LYS
+
+NOT VARIANT_TYPE ACETYLATION ## Don't acetylate a residue twice
+
+END_SELECTOR
+
+
+
+BEGIN_CASE
+
+END_CASE
