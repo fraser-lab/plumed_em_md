@@ -1,0 +1,2513 @@
+233
+241
+131
+92
+105
+73
+59
+247
+226
+223
+42
+87
+103
+34
+454
+298
+385
+313
+430
+53
+228
+89
+48
+190
+164
+231
+68
+104
+311
+221
+102
+20
+19
+96
+182
+271
+186
+248
+192
+82
+45
+112
+27
+453
+160
+389
+133
+77
+269
+136
+142
+276
+227
+155
+86
+79
+280
+39
+168
+72
+444
+252
+116
+120
+24
+56
+140
+163
+109
+174
+100
+184
+78
+165
+442
+143
+242
+16
+183
+253
+279
+62
+312
+40
+215
+172
+88
+83
+431
+170
+272
+145
+135
+114
+359
+61
+273
+14
+441
+238
+132
+146
+99
+187
+275
+246
+52
+308
+234
+118
+169
+189
+225
+144
+8
+350
+121
+76
+63
+41
+51
+166
+162
+65
+95
+445
+386
+358
+214
+240
+3
+17
+4
+191
+70
+415
+218
+64
+319
+235
+245
+93
+71
+314
+244
+75
+47
+222
+167
+134
+219
+50
+60
+173
+456
+84
+43
+97
+106
+387
+74
+81
+90
+315
+111
+161
+91
+224
+37
+25
+49
+141
+209
+80
+110
+12
+310
+171
+157
+414
+388
+320
+210
+108
+55
+54
+107
+147
+274
+197
+220
+249
+138
+38
+159
+36
+207
+432
+23
+57
+137
+158
+216
+13
+98
+194
+243
+44
+180
+101
+317
+316
+181
+11
+15
+318
+270
+113
+455
+115
+18
+22
+307
+193
+66
+156
+139
+198
+94
+416
+446
+413
+21
+46
+123
+236
+239
+237
+58
+232
+309
+122
+67
+254
+117
+384
+429
+85
+322
+69
+7
+#Nmodel_id_all 251
+#Nacc 251
+#Nmodel_id 251 bunshi/bunbo 0/1 start 0 end 251
+['_sas_model.id', '233']
+['_sas_model.type_of_model', 'atomic']
+['_sas_model.software', 'SASREF']
+['_sas_model.version', '.']
+['_sas_model.symmetry', 'P2']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '191']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/233.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/233.gmm -atmrw A
+['_sas_model.id', '241']
+['_sas_model.type_of_model', 'atomic']
+['_sas_model.software', 'SASREF']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '199']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/241.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/241.gmm -atmrw A
+['_sas_model.id', '131']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'Dammin']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '119']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/131.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/131.gmm -atmrw U -raduni 1.90
+['_sas_model.id', '92']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'DAMMIF+DAMAVER']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '84']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/92.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/92.gmm -atmrw U -raduni 1.90
+['_sas_model.id', '105']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'monsa']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '96']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/105.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/105.gmm -atmrw U -raduni 1.90
+['_sas_model.id', '73']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'Monsa']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '63']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/73.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/73.gmm -atmrw U -raduni 1.90
+['_sas_model.id', '59']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'Dammin']
+['_sas_model.version', '.']
+['_sas_model.symmetry', 'P2']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '53']
+['_sas_model.radius', '.']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/59.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/59.gmm -atmrw U -raduni 1.9
+['_sas_model.id', '247']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'DAMMIN']
+['_sas_model.version', '.']
+['_sas_model.symmetry', 'P1']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '205']
+['_sas_model.radius', '3.75']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/247.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/247.gmm -atmrw U -raduni 3.75
+['_sas_model.id', '226']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'DAMMIF']
+['_sas_model.version', '.']
+['_sas_model.symmetry', 'P1']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '184']
+['_sas_model.radius', '1.70']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/226.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/226.gmm -atmrw U -raduni 1.70
+['_sas_model.id', '223']
+['_sas_model.type_of_model', 'atomic']
+['_sas_model.software', 'crysol']
+['_sas_model.version', '.']
+['_sas_model.symmetry', 'P1']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '181']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/223.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/223.gmm -atmrw A
+['_sas_model.id', '42']
+['_sas_model.type_of_model', 'atomic']
+['_sas_model.software', 'crysol']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '12']
+['_sas_model.radius', '.']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/42.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/42.gmm -atmrw A
+['_sas_model.id', '87']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'dammif']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '79']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/87.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/87.gmm -atmrw U -raduni 1.90
+['_sas_model.id', '103']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'monsa']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '94']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/103.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/103.gmm -atmrw U -raduni 1.90
+['_sas_model.id', '34']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'Dammif']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '32']
+['_sas_model.radius', '.']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/34.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/34.gmm -atmrw U -raduni 1.9
+['_sas_model.id', '454']
+['_sas_model.type_of_model', 'mix']
+['_sas_model.software', 'EOM']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '402']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/454.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/454.gmm -atmrw A
+['_sas_model.id', '298']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'Dammif']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '262']
+['_sas_model.radius', '6.30']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/298.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/298.gmm -atmrw U -raduni 6.30
+['_sas_model.id', '385']
+['_sas_model.type_of_model', 'atomic']
+['_sas_model.software', 'OLIGOMER']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '"Monomer', 'component', 'PDB', '2A2A:A"']
+['_sas_model.fitting_id', '343']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/385.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/385.gmm -atmrw A
+['_sas_model.id', '313']
+['_sas_model.type_of_model', 'atomic']
+['_sas_model.software', 'Crysol']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '276']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/313.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/313.gmm -atmrw A
+['_sas_model.id', '430']
+['_sas_model.type_of_model', 'mix']
+['_sas_model.software', 'OLIGOMER']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '379']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/430.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/430.gmm -atmrw A
+['_sas_model.id', '53']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'Gasbor']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '47']
+['_sas_model.radius', '.']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/53.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/53.gmm -atmrw U -raduni 1.9
+['_sas_model.id', '228']
+['_sas_model.type_of_model', 'atomic']
+['_sas_model.software', 'SASREF']
+['_sas_model.version', '.']
+['_sas_model.symmetry', 'P2']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '186']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/228.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/228.gmm -atmrw A
+['_sas_model.id', '89']
+['_sas_model.type_of_model', 'mix']
+['_sas_model.software', 'bunch']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '"alternative', 'model', '1"']
+['_sas_model.fitting_id', '81']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/89.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/89.gmm -atmrw A
+['_sas_model.id', '48']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'dammin']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '42']
+['_sas_model.radius', '.']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/48.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/48.gmm -atmrw U -raduni 1.9
+['_sas_model.id', '190']
+['_sas_model.type_of_model', 'atomic']
+['_sas_model.software', 'CORAL']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '154']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/190.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/190.gmm -atmrw A
+['_sas_model.id', '164']
+['_sas_model.type_of_model', 'mix']
+['_sas_model.software', 'EOM']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '138']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/164.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/164.gmm -atmrw A
+['_sas_model.id', '231']
+['_sas_model.type_of_model', 'atomic']
+['_sas_model.software', 'SASREF']
+['_sas_model.version', '.']
+['_sas_model.symmetry', 'P2']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '189']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/231.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/231.gmm -atmrw A
+['_sas_model.id', '68']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'Dammif']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '60']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/68.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/68.gmm -atmrw U -raduni 1.90
+['_sas_model.id', '104']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'monsa']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '95']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/104.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/104.gmm -atmrw U -raduni 1.90
+['_sas_model.id', '311']
+['_sas_model.type_of_model', 'atomic']
+['_sas_model.software', 'Crysol']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '274']
+['_sas_model.radius', '.']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/311.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/311.gmm -atmrw A
+['_sas_model.id', '221']
+['_sas_model.type_of_model', 'atomic']
+['_sas_model.software', 'crysol']
+['_sas_model.version', '.']
+['_sas_model.symmetry', 'P2']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '179']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/221.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/221.gmm -atmrw A
+['_sas_model.id', '102']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'monsa']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '"Combined', 'multiphase', 'model"']
+['_sas_model.fitting_id', '94']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/102.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/102.gmm -atmrw U -raduni 1.90
+['_sas_model.id', '20']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'gasbor']
+['_sas_model.version', '.']
+['_sas_model.symmetry', 'P1']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '9']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/20.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/20.gmm -atmrw U -raduni 1.90
+['_sas_model.id', '19']
+['_sas_model.type_of_model', 'mix']
+['_sas_model.software', 'CRYSOL_30']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '8']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/19.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/19.gmm -atmrw A
+['_sas_model.id', '96']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'MONSA']
+['_sas_model.version', '.']
+['_sas_model.symmetry', 'P5']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '88']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/96.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/96.gmm -atmrw U -raduni 1.90
+['_sas_model.id', '182']
+['_sas_model.type_of_model', 'mix']
+['_sas_model.software', 'EOM']
+['_sas_model.version', '1.3']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '149']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/182.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/182.gmm -atmrw A
+['_sas_model.id', '271']
+['_sas_model.type_of_model', 'atomic']
+['_sas_model.software', 'OLIGOMER']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '"OLIGOMER', 'component', '3a"']
+['_sas_model.fitting_id', '215']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/271.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/271.gmm -atmrw A
+['_sas_model.id', '186']
+['_sas_model.type_of_model', 'mix']
+['_sas_model.software', 'BUNCH']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '151']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/186.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/186.gmm -atmrw A
+['_sas_model.id', '248']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'MONZA']
+['_sas_model.version', '1.44']
+['_sas_model.symmetry', 'P1']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '207']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/248.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/248.gmm -atmrw U -raduni 1.90
+['_sas_model.id', '192']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'DAMMIN']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '156']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/192.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/192.gmm -atmrw U -raduni 1.90
+['_sas_model.id', '82']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'dammif']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '74']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/82.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/82.gmm -atmrw U -raduni 1.90
+['_sas_model.id', '45']
+['_sas_model.type_of_model', 'mix']
+['_sas_model.software', 'crysol']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '6']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/45.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/45.gmm -atmrw A
+['_sas_model.id', '112']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'dammif']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '103']
+['_sas_model.radius', '2.80']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/112.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/112.gmm -atmrw U -raduni 2.80
+['_sas_model.id', '27']
+['_sas_model.type_of_model', 'atomic']
+['_sas_model.software', 'Crysol']
+['_sas_model.version', '.']
+['_sas_model.symmetry', 'P222']
+['_sas_model.comment', '"This', 'is', 'Xtal', 'model"']
+['_sas_model.fitting_id', '28']
+['_sas_model.radius', '.']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/27.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/27.gmm -atmrw A
+['_sas_model.id', '453']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'DAMMIF']
+['_sas_model.version', 'r4556']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '401']
+['_sas_model.radius', '1.70']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/453.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/453.gmm -atmrw U -raduni 1.70
+['_sas_model.id', '160']
+['_sas_model.type_of_model', 'mix']
+['_sas_model.software', 'EOM']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '138']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/160.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/160.gmm -atmrw A
+['_sas_model.id', '389']
+['_sas_model.type_of_model', 'atomic']
+['_sas_model.software', 'OLIGOMER']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '"Monomer', 'component', 'PDB', '2A2A:A"']
+['_sas_model.fitting_id', '345']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/389.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/389.gmm -atmrw A
+['_sas_model.id', '133']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'Dammin']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '121']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/133.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/133.gmm -atmrw U -raduni 1.90
+['_sas_model.id', '77']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'dammif']
+['_sas_model.version', '.']
+['_sas_model.symmetry', 'P1']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '69']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/77.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/77.gmm -atmrw U -raduni 1.90
+['_sas_model.id', '269']
+['_sas_model.type_of_model', 'atomic']
+['_sas_model.software', 'OLIGOMER']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '"OLIGOMER', 'component', '1:', 'head-head', 'CD27L', 'dimer"']
+['_sas_model.fitting_id', '215']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/269.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/269.gmm -atmrw A
+['_sas_model.id', '136']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'Dammin']
+['_sas_model.version', '.']
+['_sas_model.symmetry', 'P2']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '124']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/136.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/136.gmm -atmrw U -raduni 1.90
+['_sas_model.id', '142']
+['_sas_model.type_of_model', 'atomic']
+['_sas_model.software', 'CRYSOL']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '130']
+['_sas_model.radius', '.']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/142.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/142.gmm -atmrw A
+['_sas_model.id', '276']
+['_sas_model.type_of_model', 'atomic']
+['_sas_model.software', 'OLIGOMER']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '"OLIGOMER', 'component', '3e"']
+['_sas_model.fitting_id', '215']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/276.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/276.gmm -atmrw A
+['_sas_model.id', '227']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'DAMMIF']
+['_sas_model.version', '.']
+['_sas_model.symmetry', 'P2']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '185']
+['_sas_model.radius', '4.30']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/227.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/227.gmm -atmrw U -raduni 4.30
+['_sas_model.id', '155']
+['_sas_model.type_of_model', 'mix']
+['_sas_model.software', 'EOM']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '137']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/155.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/155.gmm -atmrw A
+['_sas_model.id', '86']
+['_sas_model.type_of_model', 'mix']
+['_sas_model.software', 'bunch']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '78']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/86.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/86.gmm -atmrw A
+['_sas_model.id', '79']
+['_sas_model.type_of_model', 'mix']
+['_sas_model.software', 'coral']
+['_sas_model.version', '.']
+['_sas_model.symmetry', 'P1']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '71']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/79.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/79.gmm -atmrw A
+['_sas_model.id', '280']
+['_sas_model.type_of_model', 'atomic']
+['_sas_model.software', 'SASREF']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '245']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/280.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/280.gmm -atmrw A
+['_sas_model.id', '39']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', '"Gasbor', 'and', 'Damaver"']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '37']
+['_sas_model.radius', '.']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/39.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/39.gmm -atmrw U -raduni 1.9
+['_sas_model.id', '168']
+['_sas_model.type_of_model', 'atomic']
+['_sas_model.software', 'CRYSOL']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '142']
+['_sas_model.radius', '.']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/168.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/168.gmm -atmrw A
+['_sas_model.id', '72']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'Monsa']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '62']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/72.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/72.gmm -atmrw U -raduni 1.90
+['_sas_model.id', '444']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'DAMMIN']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '388']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/444.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/444.gmm -atmrw U -raduni 1.90
+['_sas_model.id', '252']
+['_sas_model.type_of_model', 'atomic']
+['_sas_model.software', 'BUNCH+PD2']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '208']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/252.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/252.gmm -atmrw A
+['_sas_model.id', '116']
+['_sas_model.type_of_model', 'mix']
+['_sas_model.software', 'Bunch']
+['_sas_model.version', '.']
+['_sas_model.symmetry', 'P6']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '107']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/116.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/116.gmm -atmrw A
+['_sas_model.id', '120']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'dammif']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '110']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/120.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/120.gmm -atmrw U -raduni 1.90
+['_sas_model.id', '24']
+['_sas_model.type_of_model', 'atomic']
+['_sas_model.software', 'CRYSOL_30']
+['_sas_model.version', '.']
+['_sas_model.symmetry', 'P1']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '2']
+['_sas_model.radius', '.']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/24.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/24.gmm -atmrw A
+['_sas_model.id', '56']
+['_sas_model.type_of_model', 'mix']
+['_sas_model.software', 'Bunch']
+['_sas_model.version', '.']
+['_sas_model.symmetry', 'P2']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '50']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/56.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/56.gmm -atmrw A
+['_sas_model.id', '140']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'Dammin']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '128']
+['_sas_model.radius', '3.40']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/140.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/140.gmm -atmrw U -raduni 3.40
+['_sas_model.id', '163']
+['_sas_model.type_of_model', 'mix']
+['_sas_model.software', 'EOM']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '138']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/163.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/163.gmm -atmrw A
+['_sas_model.id', '109']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'Dammif']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '100']
+['_sas_model.radius', '5.00']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/109.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/109.gmm -atmrw U -raduni 5.00
+['_sas_model.id', '174']
+['_sas_model.type_of_model', 'atomic']
+['_sas_model.software', 'CRYSOL30']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '"Based', 'on', 'PDB', '4E3V"']
+['_sas_model.fitting_id', '148']
+['_sas_model.radius', '.']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/174.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/174.gmm -atmrw A
+['_sas_model.id', '100']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'dammif']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '92']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/100.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/100.gmm -atmrw U -raduni 1.90
+['_sas_model.id', '184']
+['_sas_model.type_of_model', 'mix']
+['_sas_model.software', 'EOM']
+['_sas_model.version', '1.3']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '149']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/184.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/184.gmm -atmrw A
+['_sas_model.id', '78']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'dammif']
+['_sas_model.version', '.']
+['_sas_model.symmetry', 'P1']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '70']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/78.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/78.gmm -atmrw U -raduni 1.90
+['_sas_model.id', '165']
+['_sas_model.type_of_model', 'mix']
+['_sas_model.software', 'EOM']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '138']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/165.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/165.gmm -atmrw A
+['_sas_model.id', '442']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'DAMMIN']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '390']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/442.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/442.gmm -atmrw U -raduni 1.90
+['_sas_model.id', '143']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'Sasref']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '131']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/143.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/143.gmm -atmrw U -raduni 1.90
+['_sas_model.id', '242']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'Gasbor']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '200']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/242.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/242.gmm -atmrw U -raduni 1.90
+['_sas_model.id', '16']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'DAMMIN']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '14']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/16.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/16.gmm -atmrw U -raduni 1.90
+['_sas_model.id', '183']
+['_sas_model.type_of_model', 'mix']
+['_sas_model.software', 'EOM']
+['_sas_model.version', '1.3']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '149']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/183.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/183.gmm -atmrw A
+['_sas_model.id', '253']
+['_sas_model.type_of_model', 'atomic']
+['_sas_model.software', 'Manual']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '209']
+['_sas_model.radius', '.']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/253.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/253.gmm -atmrw A
+['_sas_model.id', '279']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'DAMMIN']
+['_sas_model.version', '.']
+['_sas_model.symmetry', 'P1']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '244']
+['_sas_model.radius', '2.50']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/279.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/279.gmm -atmrw U -raduni 2.50
+['_sas_model.id', '62']
+['_sas_model.type_of_model', 'atomic']
+['_sas_model.software', 'Crysol']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '56']
+['_sas_model.radius', '.']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/62.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/62.gmm -atmrw A
+['_sas_model.id', '312']
+['_sas_model.type_of_model', 'atomic']
+['_sas_model.software', 'Crysol']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '275']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/312.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/312.gmm -atmrw A
+['_sas_model.id', '40']
+['_sas_model.type_of_model', 'atomic']
+['_sas_model.software', 'Crysol']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '38']
+['_sas_model.radius', '.']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/40.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/40.gmm -atmrw A
+['_sas_model.id', '215']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'DAMMIF']
+['_sas_model.version', '.']
+['_sas_model.symmetry', 'p1']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '171']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/215.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/215.gmm -atmrw U -raduni 1.90
+['_sas_model.id', '172']
+['_sas_model.type_of_model', 'atomic']
+['_sas_model.software', 'CRYSOL']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '"ChainB', 'from', 'PDB', '1E78"']
+['_sas_model.fitting_id', '146']
+['_sas_model.radius', '.']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/172.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/172.gmm -atmrw A
+['_sas_model.id', '88']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'gasbor']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '80']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/88.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/88.gmm -atmrw U -raduni 1.90
+['_sas_model.id', '83']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'gasbor']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '75']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/83.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/83.gmm -atmrw U -raduni 1.90
+['_sas_model.id', '431']
+['_sas_model.type_of_model', 'mix']
+['_sas_model.software', 'OLIGOMER']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '379']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/431.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/431.gmm -atmrw A
+['_sas_model.id', '170']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'DAMMIF/DAMMIN']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '144']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/170.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/170.gmm -atmrw U -raduni 1.90
+['_sas_model.id', '272']
+['_sas_model.type_of_model', 'atomic']
+['_sas_model.software', 'OLIGOMER']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '"OLIGOMER', 'component', '3b"']
+['_sas_model.fitting_id', '215']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/272.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/272.gmm -atmrw A
+['_sas_model.id', '145']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'dammin']
+['_sas_model.version', '5.3']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '133']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/145.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/145.gmm -atmrw U -raduni 1.90
+['_sas_model.id', '135']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'dammin']
+['_sas_model.version', '.']
+['_sas_model.symmetry', 'Icosohedra']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '123']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/135.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/135.gmm -atmrw U -raduni 1.90
+['_sas_model.id', '114']
+['_sas_model.type_of_model', 'mix']
+['_sas_model.software', 'coral']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '105']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/114.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/114.gmm -atmrw A
+['_sas_model.id', '359']
+['_sas_model.type_of_model', 'mix']
+['_sas_model.software', 'FoXS']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '315']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/359.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/359.gmm -atmrw A
+['_sas_model.id', '61']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'Dammin']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '55']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/61.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/61.gmm -atmrw U -raduni 1.90
+['_sas_model.id', '273']
+['_sas_model.type_of_model', 'atomic']
+['_sas_model.software', 'OLIGOMER']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '215']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/273.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/273.gmm -atmrw A
+['_sas_model.id', '14']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'dammif']
+['_sas_model.version', '.']
+['_sas_model.symmetry', 'P1']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '16']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/14.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/14.gmm -atmrw U -raduni 1.90
+['_sas_model.id', '441']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'DAMMIN']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '389']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/441.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/441.gmm -atmrw U -raduni 1.90
+['_sas_model.id', '238']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'Gasbor']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '196']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/238.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/238.gmm -atmrw U -raduni 1.90
+['_sas_model.id', '132']
+['_sas_model.type_of_model', 'atomic']
+['_sas_model.software', 'Sasref']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '120']
+['_sas_model.radius', '.']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/132.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/132.gmm -atmrw A
+['_sas_model.id', '146']
+['_sas_model.type_of_model', 'mix']
+['_sas_model.software', 'bunch']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '134']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/146.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/146.gmm -atmrw A
+['_sas_model.id', '99']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'dammif']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '91']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/99.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/99.gmm -atmrw U -raduni 1.90
+['_sas_model.id', '187']
+['_sas_model.type_of_model', 'mix']
+['_sas_model.software', 'BUNCH']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '152']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/187.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/187.gmm -atmrw A
+['_sas_model.id', '275']
+['_sas_model.type_of_model', 'atomic']
+['_sas_model.software', 'OLIGOMER']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '"OLIGOMER', 'component', '3d"']
+['_sas_model.fitting_id', '215']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/275.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/275.gmm -atmrw A
+['_sas_model.id', '246']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'Gasbor']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '204']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/246.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/246.gmm -atmrw U -raduni 1.90
+['_sas_model.id', '52']
+['_sas_model.type_of_model', 'atomic']
+['_sas_model.software', 'Sasref']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '46']
+['_sas_model.radius', '.']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/52.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/52.gmm -atmrw A
+['_sas_model.id', '308']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'DAMMIN']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '270']
+['_sas_model.radius', '3.50']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/308.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/308.gmm -atmrw U -raduni 3.50
+['_sas_model.id', '234']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'DAMMIF']
+['_sas_model.version', '.']
+['_sas_model.symmetry', 'P2']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '192']
+['_sas_model.radius', '4.30']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/234.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/234.gmm -atmrw U -raduni 4.30
+['_sas_model.id', '118']
+['_sas_model.type_of_model', 'atomic']
+['_sas_model.software', 'crysol']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '109']
+['_sas_model.radius', '.']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/118.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/118.gmm -atmrw A
+['_sas_model.id', '169']
+['_sas_model.type_of_model', 'atomic']
+['_sas_model.software', 'CRYSOL']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '143']
+['_sas_model.radius', '.']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/169.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/169.gmm -atmrw A
+['_sas_model.id', '189']
+['_sas_model.type_of_model', 'mix']
+['_sas_model.software', 'CORAL']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '153']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/189.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/189.gmm -atmrw A
+['_sas_model.id', '225']
+['_sas_model.type_of_model', 'atomic']
+['_sas_model.software', 'crysol']
+['_sas_model.version', '.']
+['_sas_model.symmetry', 'P1']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '183']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/225.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/225.gmm -atmrw A
+['_sas_model.id', '144']
+['_sas_model.type_of_model', 'mix']
+['_sas_model.software', 'Coral']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '132']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/144.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/144.gmm -atmrw A
+['_sas_model.id', '8']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'dammif']
+['_sas_model.version', '.']
+['_sas_model.symmetry', 'P222']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '22']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/8.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/8.gmm -atmrw U -raduni 1.90
+['_sas_model.id', '350']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'DAMMIN']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '306']
+['_sas_model.radius', '2.25']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/350.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/350.gmm -atmrw U -raduni 2.25
+['_sas_model.id', '121']
+['_sas_model.type_of_model', 'atomic']
+['_sas_model.software', 'CRYSOL']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '111']
+['_sas_model.radius', '.']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/121.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/121.gmm -atmrw A
+['_sas_model.id', '76']
+['_sas_model.type_of_model', 'mix']
+['_sas_model.software', 'Bunch']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '68']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/76.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/76.gmm -atmrw A
+['_sas_model.id', '63']
+['_sas_model.type_of_model', 'atomic']
+['_sas_model.software', 'Sasref']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '57']
+['_sas_model.radius', '.']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/63.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/63.gmm -atmrw A
+['_sas_model.id', '41']
+['_sas_model.type_of_model', 'atomic']
+['_sas_model.software', 'Crysol']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '39']
+['_sas_model.radius', '.']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/41.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/41.gmm -atmrw A
+['_sas_model.id', '51']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'Gasbor']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '45']
+['_sas_model.radius', '.']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/51.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/51.gmm -atmrw U -raduni 1.9
+['_sas_model.id', '166']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'dammin']
+['_sas_model.version', '5.3']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '140']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/166.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/166.gmm -atmrw U -raduni 1.90
+['_sas_model.id', '162']
+['_sas_model.type_of_model', 'mix']
+['_sas_model.software', 'EOM']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '138']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/162.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/162.gmm -atmrw A
+['_sas_model.id', '65']
+['_sas_model.type_of_model', 'mix']
+['_sas_model.software', 'EOM']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '58']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/65.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/65.gmm -atmrw A
+['_sas_model.id', '95']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'Dammin']
+['_sas_model.version', '.']
+['_sas_model.symmetry', 'P5']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '87']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/95.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/95.gmm -atmrw U -raduni 1.90
+['_sas_model.id', '445']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'DAMMIN']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '393']
+['_sas_model.radius', '2.75']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/445.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/445.gmm -atmrw U -raduni 2.75
+['_sas_model.id', '386']
+['_sas_model.type_of_model', 'atomic']
+['_sas_model.software', 'OLIGOMER']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '"Dimer', 'component', 'PDB', '2A2A:AB"']
+['_sas_model.fitting_id', '344']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/386.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/386.gmm -atmrw A
+['_sas_model.id', '358']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'DAMMIN']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '314']
+['_sas_model.radius', '4.00']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/358.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/358.gmm -atmrw U -raduni 4.00
+['_sas_model.id', '214']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'DAMMIF']
+['_sas_model.version', '.']
+['_sas_model.symmetry', 'P4']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '170']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/214.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/214.gmm -atmrw U -raduni 1.90
+['_sas_model.id', '240']
+['_sas_model.type_of_model', 'atomic']
+['_sas_model.software', 'SASREF']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '198']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/240.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/240.gmm -atmrw A
+['_sas_model.id', '3']
+['_sas_model.type_of_model', 'atomic']
+['_sas_model.software', 'OLIGOMER']
+['_sas_model.version', '28']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '27']
+['_sas_model.radius', '.']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/3.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/3.gmm -atmrw A
+['_sas_model.id', '17']
+['_sas_model.type_of_model', 'atomic']
+['_sas_model.software', 'crysol_30']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '11']
+['_sas_model.radius', '.']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/17.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/17.gmm -atmrw A
+['_sas_model.id', '4']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'DAMMIF']
+['_sas_model.version', '.']
+['_sas_model.symmetry', 'P1']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '26']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/4.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/4.gmm -atmrw U -raduni 1.90
+['_sas_model.id', '191']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'DAMMIN']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '155']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/191.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/191.gmm -atmrw U -raduni 1.90
+['_sas_model.id', '70']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'Dammif']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '64']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/70.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/70.gmm -atmrw U -raduni 1.90
+['_sas_model.id', '415']
+['_sas_model.type_of_model', 'atomic']
+['_sas_model.software', 'CORAL']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '369']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/415.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/415.gmm -atmrw A
+['_sas_model.id', '218']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'DAMMIF']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '176']
+['_sas_model.radius', '3.00']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/218.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/218.gmm -atmrw U -raduni 3.00
+['_sas_model.id', '64']
+['_sas_model.type_of_model', 'mix']
+['_sas_model.software', 'EOM']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '58']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/64.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/64.gmm -atmrw A
+['_sas_model.id', '319']
+['_sas_model.type_of_model', 'mix']
+['_sas_model.software', 'EOM']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '281']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/319.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/319.gmm -atmrw A
+['_sas_model.id', '235']
+['_sas_model.type_of_model', 'atomic']
+['_sas_model.software', 'SASREF']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '193']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/235.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/235.gmm -atmrw A
+['_sas_model.id', '245']
+['_sas_model.type_of_model', 'atomic']
+['_sas_model.software', 'SASREF']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '203']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/245.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/245.gmm -atmrw A
+['_sas_model.id', '93']
+['_sas_model.type_of_model', 'atomic']
+['_sas_model.software', 'SASREF']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '85']
+['_sas_model.radius', '.']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/93.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/93.gmm -atmrw A
+['_sas_model.id', '71']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'Dammif']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '67']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/71.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/71.gmm -atmrw U -raduni 1.90
+['_sas_model.id', '314']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'DAMMIN']
+['_sas_model.version', '.']
+['_sas_model.symmetry', 'P2']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '277']
+['_sas_model.radius', '2.40']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/314.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/314.gmm -atmrw U -raduni 2.40
+['_sas_model.id', '244']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'Gasbor']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '202']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/244.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/244.gmm -atmrw U -raduni 1.90
+['_sas_model.id', '75']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'Monsa']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '66']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/75.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/75.gmm -atmrw U -raduni 1.90
+['_sas_model.id', '47']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'Dammin']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '41']
+['_sas_model.radius', '.']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/47.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/47.gmm -atmrw U -raduni 1.9
+['_sas_model.id', '222']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'DAMMIF']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '180']
+['_sas_model.radius', '3.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/222.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/222.gmm -atmrw U -raduni 3.90
+['_sas_model.id', '167']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'DAMMIF/DAMMIN']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '141']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/167.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/167.gmm -atmrw U -raduni 1.90
+['_sas_model.id', '134']
+['_sas_model.type_of_model', 'mix']
+['_sas_model.software', 'Sasref']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '122']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/134.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/134.gmm -atmrw A
+['_sas_model.id', '219']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'DAMMIF']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '177']
+['_sas_model.radius', '1.50']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/219.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/219.gmm -atmrw U -raduni 1.50
+['_sas_model.id', '50']
+['_sas_model.type_of_model', 'mix']
+['_sas_model.software', 'Bunch']
+['_sas_model.version', '.']
+['_sas_model.symmetry', 'P2']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '44']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/50.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/50.gmm -atmrw A
+['_sas_model.id', '60']
+['_sas_model.type_of_model', 'mix']
+['_sas_model.software', 'Bunch']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', 'P2']
+['_sas_model.fitting_id', '54']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/60.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/60.gmm -atmrw A
+['_sas_model.id', '173']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'DAMMIF']
+['_sas_model.version', '.']
+['_sas_model.symmetry', 'P4']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '147']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/173.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/173.gmm -atmrw U -raduni 1.90
+['_sas_model.id', '456']
+['_sas_model.type_of_model', 'mix']
+['_sas_model.software', 'EOM']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '402']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/456.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/456.gmm -atmrw A
+['_sas_model.id', '84']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'dammif']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '76']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/84.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/84.gmm -atmrw U -raduni 1.90
+['_sas_model.id', '43']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'dammif']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '13']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/43.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/43.gmm -atmrw U -raduni 1.90
+['_sas_model.id', '97']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'MONSA']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '89']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/97.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/97.gmm -atmrw U -raduni 1.90
+['_sas_model.id', '106']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'monsa']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '97']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/106.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/106.gmm -atmrw U -raduni 1.90
+['_sas_model.id', '387']
+['_sas_model.type_of_model', 'atomic']
+['_sas_model.software', 'OLIGOMER']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '"Monomer', 'component', 'PDB', '2A2A:A"']
+['_sas_model.fitting_id', '344']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/387.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/387.gmm -atmrw A
+['_sas_model.id', '74']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'Monsa']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '65']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/74.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/74.gmm -atmrw U -raduni 1.90
+['_sas_model.id', '81']
+['_sas_model.type_of_model', 'atomic']
+['_sas_model.software', 'crysol']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '73']
+['_sas_model.radius', '.']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/81.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/81.gmm -atmrw A
+['_sas_model.id', '90']
+['_sas_model.type_of_model', 'mix']
+['_sas_model.software', 'bunch']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '"alternative', 'model', '2"']
+['_sas_model.fitting_id', '82']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/90.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/90.gmm -atmrw A
+['_sas_model.id', '315']
+['_sas_model.type_of_model', 'atomic']
+['_sas_model.software', '"SASREF', 'CV"']
+['_sas_model.version', '.']
+['_sas_model.symmetry', 'P2']
+['_sas_model.comment', '"Constraint', 'of', 'max', '8', 'A', 'among', 'the', 'quadruplex', 'imposed"']
+['_sas_model.fitting_id', '278']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/315.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/315.gmm -atmrw A
+['_sas_model.id', '111']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'dammif']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '102']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/111.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/111.gmm -atmrw U -raduni 1.90
+['_sas_model.id', '161']
+['_sas_model.type_of_model', 'mix']
+['_sas_model.software', 'EOM']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '138']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/161.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/161.gmm -atmrw A
+['_sas_model.id', '91']
+['_sas_model.type_of_model', 'mix']
+['_sas_model.software', 'MASSHA+BUNCH']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '83']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/91.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/91.gmm -atmrw A
+['_sas_model.id', '224']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'DAMMIF']
+['_sas_model.version', '.']
+['_sas_model.symmetry', 'P1']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '182']
+['_sas_model.radius', '2.30']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/224.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/224.gmm -atmrw U -raduni 2.30
+['_sas_model.id', '37']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', '"Gasbor', 'and', 'Damaver"']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '35']
+['_sas_model.radius', '.']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/37.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/37.gmm -atmrw U -raduni 1.9
+['_sas_model.id', '25']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'gasbor']
+['_sas_model.version', '.']
+['_sas_model.symmetry', 'P1']
+['_sas_model.comment', '"Gasbori', 'run', '10', 'times,', 'damsel', 'identified', 'structure', 'with', 'lowest', 'NSD"']
+['_sas_model.fitting_id', '1']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/25.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/25.gmm -atmrw U -raduni 1.90
+['_sas_model.id', '49']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'dammin']
+['_sas_model.version', '.']
+['_sas_model.symmetry', 'P2']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '43']
+['_sas_model.radius', '.']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/49.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/49.gmm -atmrw U -raduni 1.9
+['_sas_model.id', '141']
+['_sas_model.type_of_model', 'atomic']
+['_sas_model.software', 'CRYSOL']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '129']
+['_sas_model.radius', '.']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/141.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/141.gmm -atmrw A
+['_sas_model.id', '209']
+['_sas_model.type_of_model', 'atomic']
+['_sas_model.software', 'CRYSOL']
+['_sas_model.version', 'v2.8.3']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '166']
+['_sas_model.radius', '.']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/209.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/209.gmm -atmrw A
+['_sas_model.id', '80']
+['_sas_model.type_of_model', 'mix']
+['_sas_model.software', 'coral']
+['_sas_model.version', '.']
+['_sas_model.symmetry', 'P1']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '72']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/80.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/80.gmm -atmrw A
+['_sas_model.id', '110']
+['_sas_model.type_of_model', 'atomic']
+['_sas_model.software', 'Sasref']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '101']
+['_sas_model.radius', '.']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/110.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/110.gmm -atmrw A
+['_sas_model.id', '12']
+['_sas_model.type_of_model', 'atomic']
+['_sas_model.software', 'crysol']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '18']
+['_sas_model.radius', '.']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/12.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/12.gmm -atmrw A
+['_sas_model.id', '310']
+['_sas_model.type_of_model', 'atomic']
+['_sas_model.software', 'CRYSOL']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '272']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/310.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/310.gmm -atmrw A
+['_sas_model.id', '171']
+['_sas_model.type_of_model', 'atomic']
+['_sas_model.software', 'CRYSOL']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '"ChainA', 'from', 'PDB', '1E78"']
+['_sas_model.fitting_id', '145']
+['_sas_model.radius', '.']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/171.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/171.gmm -atmrw A
+['_sas_model.id', '157']
+['_sas_model.type_of_model', 'mix']
+['_sas_model.software', 'EOM']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '137']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/157.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/157.gmm -atmrw A
+['_sas_model.id', '414']
+['_sas_model.type_of_model', 'atomic']
+['_sas_model.software', 'CRYSOL']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '368']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/414.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/414.gmm -atmrw A
+['_sas_model.id', '388']
+['_sas_model.type_of_model', 'atomic']
+['_sas_model.software', 'OLIGOMER']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '"Dimer', 'component', 'PDB', '2A2A:AB"']
+['_sas_model.fitting_id', '345']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/388.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/388.gmm -atmrw A
+['_sas_model.id', '320']
+['_sas_model.type_of_model', 'atomic']
+['_sas_model.software', 'CRYSOL']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '282']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/320.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/320.gmm -atmrw A
+['_sas_model.id', '210']
+['_sas_model.type_of_model', 'atomic']
+['_sas_model.software', 'CRYSOL']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '167']
+['_sas_model.radius', '.']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/210.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/210.gmm -atmrw A
+['_sas_model.id', '108']
+['_sas_model.type_of_model', 'atomic']
+['_sas_model.software', 'Sasref']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '99']
+['_sas_model.radius', '.']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/108.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/108.gmm -atmrw A
+['_sas_model.id', '55']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'Dammin']
+['_sas_model.version', '.']
+['_sas_model.symmetry', 'P2']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '49']
+['_sas_model.radius', '.']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/55.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/55.gmm -atmrw U -raduni 1.9
+['_sas_model.id', '54']
+['_sas_model.type_of_model', 'atomic']
+['_sas_model.software', 'Sasref']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '48']
+['_sas_model.radius', '.']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/54.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/54.gmm -atmrw A
+['_sas_model.id', '107']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'Dammif']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '98']
+['_sas_model.radius', '6.80']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/107.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/107.gmm -atmrw U -raduni 6.80
+['_sas_model.id', '147']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'DAMMIF']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '135']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/147.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/147.gmm -atmrw U -raduni 1.90
+['_sas_model.id', '274']
+['_sas_model.type_of_model', 'atomic']
+['_sas_model.software', 'OLIGOMER']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '"OLIGOMER', 'component', '3c"']
+['_sas_model.fitting_id', '215']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/274.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/274.gmm -atmrw A
+['_sas_model.id', '197']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'DAMMIF']
+['_sas_model.version', 'online']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '160']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/197.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/197.gmm -atmrw U -raduni 1.90
+['_sas_model.id', '220']
+['_sas_model.type_of_model', 'atomic']
+['_sas_model.software', 'CRYSOL']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '178']
+['_sas_model.radius', '.']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/220.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/220.gmm -atmrw A
+['_sas_model.id', '249']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'MONSA']
+['_sas_model.version', '1.44']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '206']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/249.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/249.gmm -atmrw U -raduni 1.90
+['_sas_model.id', '138']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'Dammin']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', 'P2']
+['_sas_model.fitting_id', '126']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/138.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/138.gmm -atmrw U -raduni 1.90
+['_sas_model.id', '38']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', '"Gasbor', 'and', 'Damaver"']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '36']
+['_sas_model.radius', '.']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/38.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/38.gmm -atmrw U -raduni 1.9
+['_sas_model.id', '159']
+['_sas_model.type_of_model', 'mix']
+['_sas_model.software', 'EOM']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '138']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/159.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/159.gmm -atmrw A
+['_sas_model.id', '36']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'Dammif']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '34']
+['_sas_model.radius', '5.60']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/36.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/36.gmm -atmrw U -raduni 5.60
+['_sas_model.id', '207']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'DAMMIF']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '163']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/207.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/207.gmm -atmrw U -raduni 1.90
+['_sas_model.id', '432']
+['_sas_model.type_of_model', 'mix']
+['_sas_model.software', 'OLIGOMER']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '379']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/432.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/432.gmm -atmrw A
+['_sas_model.id', '23']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'dammif']
+['_sas_model.version', '.']
+['_sas_model.symmetry', 'P1']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '3']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/23.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/23.gmm -atmrw U -raduni 1.90
+['_sas_model.id', '57']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'Dammin']
+['_sas_model.version', '.']
+['_sas_model.symmetry', 'P222']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '51']
+['_sas_model.radius', '.']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/57.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/57.gmm -atmrw U -raduni 1.9
+['_sas_model.id', '137']
+['_sas_model.type_of_model', 'mix']
+['_sas_model.software', 'Bunch']
+['_sas_model.version', '.']
+['_sas_model.symmetry', 'P2']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '125']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/137.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/137.gmm -atmrw A
+['_sas_model.id', '158']
+['_sas_model.type_of_model', 'mix']
+['_sas_model.software', 'EOM']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '137']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/158.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/158.gmm -atmrw A
+['_sas_model.id', '216']
+['_sas_model.type_of_model', 'mix']
+['_sas_model.software', 'SASREF']
+['_sas_model.version', '.']
+['_sas_model.symmetry', 'P2']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '172']
+['_sas_model.radius', '.']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/216.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/216.gmm -atmrw A
+['_sas_model.id', '13']
+['_sas_model.type_of_model', 'atomic']
+['_sas_model.software', 'crysol']
+['_sas_model.version', '28']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '17']
+['_sas_model.radius', '.']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/13.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/13.gmm -atmrw A
+['_sas_model.id', '98']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'dammif']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '90']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/98.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/98.gmm -atmrw U -raduni 1.90
+['_sas_model.id', '194']
+['_sas_model.type_of_model', 'atomic']
+['_sas_model.software', 'CRYSOL']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '159']
+['_sas_model.radius', '.']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/194.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/194.gmm -atmrw A
+['_sas_model.id', '243']
+['_sas_model.type_of_model', 'atomic']
+['_sas_model.software', 'SASREF']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '201']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/243.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/243.gmm -atmrw A
+['_sas_model.id', '44']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'dammif']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '7']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/44.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/44.gmm -atmrw U -raduni 1.90
+['_sas_model.id', '180']
+['_sas_model.type_of_model', 'mix']
+['_sas_model.software', 'EOM']
+['_sas_model.version', '1.3']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '149']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/180.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/180.gmm -atmrw A
+['_sas_model.id', '101']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'dammif']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '93']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/101.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/101.gmm -atmrw U -raduni 1.90
+['_sas_model.id', '317']
+['_sas_model.type_of_model', 'atomic']
+['_sas_model.software', 'CRYSOL']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '280']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/317.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/317.gmm -atmrw A
+['_sas_model.id', '316']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'DAMMIN']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '279']
+['_sas_model.radius', '6.10']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/316.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/316.gmm -atmrw U -raduni 6.10
+['_sas_model.id', '181']
+['_sas_model.type_of_model', 'mix']
+['_sas_model.software', 'EOM']
+['_sas_model.version', '1.3']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '149']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/181.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/181.gmm -atmrw A
+['_sas_model.id', '11']
+['_sas_model.type_of_model', 'atomic']
+['_sas_model.software', 'crysol']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '19']
+['_sas_model.radius', '.']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/11.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/11.gmm -atmrw A
+['_sas_model.id', '15']
+['_sas_model.type_of_model', 'mix']
+['_sas_model.software', 'crysol']
+['_sas_model.version', '28']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '15']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/15.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/15.gmm -atmrw A
+['_sas_model.id', '318']
+['_sas_model.type_of_model', 'mix']
+['_sas_model.software', 'EOM']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '281']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/318.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/318.gmm -atmrw A
+['_sas_model.id', '270']
+['_sas_model.type_of_model', 'atomic']
+['_sas_model.software', 'OLIGOMER']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '"OLIGOMER', 'component', '2:', 'side-side', 'CD27L', 'dimer"']
+['_sas_model.fitting_id', '215']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/270.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/270.gmm -atmrw A
+['_sas_model.id', '113']
+['_sas_model.type_of_model', 'mix']
+['_sas_model.software', 'coral']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '104']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/113.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/113.gmm -atmrw A
+['_sas_model.id', '455']
+['_sas_model.type_of_model', 'mix']
+['_sas_model.software', 'EOM']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '402']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/455.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/455.gmm -atmrw A
+['_sas_model.id', '115']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'Dammin']
+['_sas_model.version', '.']
+['_sas_model.symmetry', 'P6']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '106']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/115.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/115.gmm -atmrw U -raduni 1.90
+['_sas_model.id', '18']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'gasbor']
+['_sas_model.version', '.']
+['_sas_model.symmetry', 'P1']
+['_sas_model.comment', '"ran', 'it', '10', 'times', 'and', 'took', 'the', 'model', 'with', 'the', 'lowest', 'NSD', '(damsel)', 'and', 'visually', 'best', 'fit', '(pymol)"']
+['_sas_model.fitting_id', '10']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/18.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/18.gmm -atmrw U -raduni 1.90
+['_sas_model.id', '22']
+['_sas_model.type_of_model', 'atomic']
+['_sas_model.software', 'crysol']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '4']
+['_sas_model.radius', '.']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/22.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/22.gmm -atmrw A
+['_sas_model.id', '307']
+['_sas_model.type_of_model', 'atomic']
+['_sas_model.software', 'CRYSOL']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '269']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/307.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/307.gmm -atmrw A
+['_sas_model.id', '193']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'DAMMIF']
+['_sas_model.version', '.']
+['_sas_model.symmetry', 'p222']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '157']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/193.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/193.gmm -atmrw U -raduni 1.90
+['_sas_model.id', '66']
+['_sas_model.type_of_model', 'mix']
+['_sas_model.software', 'EOM']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '"The', 'fit', 'is', 'obtained', 'by', 'the', 'average', 'of', 'the', 'three', 'EOM', 'models', '"']
+['_sas_model.fitting_id', '58']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/66.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/66.gmm -atmrw A
+['_sas_model.id', '156']
+['_sas_model.type_of_model', 'mix']
+['_sas_model.software', 'EOM']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '137']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/156.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/156.gmm -atmrw A
+['_sas_model.id', '139']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'Dammin']
+['_sas_model.version', '.']
+['_sas_model.symmetry', 'P2']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '127']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/139.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/139.gmm -atmrw U -raduni 1.90
+['_sas_model.id', '198']
+['_sas_model.type_of_model', 'atomic']
+['_sas_model.software', 'CRYSOL']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '161']
+['_sas_model.radius', '.']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/198.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/198.gmm -atmrw A
+['_sas_model.id', '94']
+['_sas_model.type_of_model', 'mix']
+['_sas_model.software', 'BUNCH']
+['_sas_model.version', '.']
+['_sas_model.symmetry', 'P5']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '86']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/94.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/94.gmm -atmrw A
+['_sas_model.id', '416']
+['_sas_model.type_of_model', 'atomic']
+['_sas_model.software', 'CORAL']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '370']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/416.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/416.gmm -atmrw A
+['_sas_model.id', '446']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'DAMMIN']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '394']
+['_sas_model.radius', '4.75']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/446.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/446.gmm -atmrw U -raduni 4.75
+['_sas_model.id', '413']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'DAMMIN']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '367']
+['_sas_model.radius', '3.70']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/413.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/413.gmm -atmrw U -raduni 3.70
+['_sas_model.id', '21']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'DAMMIN']
+['_sas_model.version', '.']
+['_sas_model.symmetry', 'P1']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '5']
+['_sas_model.radius', '.']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/21.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/21.gmm -atmrw U -raduni 1.9
+['_sas_model.id', '46']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'Dammin']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '40']
+['_sas_model.radius', '.']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/46.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/46.gmm -atmrw U -raduni 1.9
+['_sas_model.id', '123']
+['_sas_model.type_of_model', 'atomic']
+['_sas_model.software', 'CRYSOL']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '113']
+['_sas_model.radius', '.']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/123.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/123.gmm -atmrw A
+['_sas_model.id', '236']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'Gasbor']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '194']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/236.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/236.gmm -atmrw U -raduni 1.90
+['_sas_model.id', '239']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'Gasbor']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '197']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/239.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/239.gmm -atmrw U -raduni 1.90
+['_sas_model.id', '237']
+['_sas_model.type_of_model', 'atomic']
+['_sas_model.software', 'SASREF']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '195']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/237.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/237.gmm -atmrw A
+['_sas_model.id', '58']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'Bunch']
+['_sas_model.version', '.']
+['_sas_model.symmetry', 'P222']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '52']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/58.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/58.gmm -atmrw U -raduni 1.90
+['_sas_model.id', '232']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'DAMMIF']
+['_sas_model.version', '.']
+['_sas_model.symmetry', 'P2']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '190']
+['_sas_model.radius', '3.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/232.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/232.gmm -atmrw U -raduni 3.90
+['_sas_model.id', '309']
+['_sas_model.type_of_model', 'atomic']
+['_sas_model.software', 'SASREF']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '271']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/309.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/309.gmm -atmrw A
+['_sas_model.id', '122']
+['_sas_model.type_of_model', 'atomic']
+['_sas_model.software', 'CRYSOL']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '112']
+['_sas_model.radius', '.']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/122.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/122.gmm -atmrw A
+['_sas_model.id', '67']
+['_sas_model.type_of_model', 'mix']
+['_sas_model.software', 'Bunch']
+['_sas_model.version', '.']
+['_sas_model.symmetry', 'P6/P1']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '59']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/67.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/67.gmm -atmrw A
+['_sas_model.id', '254']
+['_sas_model.type_of_model', 'atomic']
+['_sas_model.software', 'SASREF']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '210']
+['_sas_model.radius', '.']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/254.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/254.gmm -atmrw A
+['_sas_model.id', '117']
+['_sas_model.type_of_model', 'atomic']
+['_sas_model.software', 'Sasref']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '108']
+['_sas_model.radius', '.']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/117.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/117.gmm -atmrw A
+['_sas_model.id', '384']
+['_sas_model.type_of_model', 'atomic']
+['_sas_model.software', 'OLIGOMER']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '"Dimer', 'component', 'PDB', '2A2A:AB"']
+['_sas_model.fitting_id', '343']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/384.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/384.gmm -atmrw A
+['_sas_model.id', '429']
+['_sas_model.type_of_model', 'mix']
+['_sas_model.software', 'OLIGOMER']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '379']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/429.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/429.gmm -atmrw A
+['_sas_model.id', '85']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'gasbor']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '"gasbor', 'model"']
+['_sas_model.fitting_id', '77']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/85.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/85.gmm -atmrw U -raduni 1.90
+['_sas_model.id', '322']
+['_sas_model.type_of_model', 'mix']
+['_sas_model.software', 'EOM']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '281']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/322.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/322.gmm -atmrw A
+['_sas_model.id', '69']
+['_sas_model.type_of_model', 'dummy']
+['_sas_model.software', 'Dammif']
+['_sas_model.version', '.']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '61']
+['_sas_model.radius', '1.90']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/69.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/69.gmm -atmrw U -raduni 1.90
+['_sas_model.id', '7']
+['_sas_model.type_of_model', 'atomic']
+['_sas_model.software', 'crysol']
+['_sas_model.version', '28']
+['_sas_model.symmetry', '.']
+['_sas_model.comment', '.']
+['_sas_model.fitting_id', '23']
+['_sas_model.radius', '.']
+#gmconvert -icif /home/takawaba/etc/sas/splitcif/7.cif -ng 10 -emalg G -delzw T delid T -ogmm /home/takawaba/etc/sas/gmm/7.gmm -atmrw A

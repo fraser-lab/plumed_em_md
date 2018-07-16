@@ -1,0 +1,41 @@
+CC	      = gcc
+
+CFLAGS	      = -O2 -g -Wall
+
+DEST	      = .
+
+EXTHDRS	      =
+
+HDRS	      = \
+
+INSTALL	      = /etc/install
+
+LD	      = gcc
+
+LDFLAGS	      = -O2 -g -Wall -lm
+
+LIBS	      = 
+
+MAKEFILE      = Makefile
+
+OBJS	      = io_mmCIF.o\
+    	        PDB_from_mmCIF.o\
+    	        transf_atom.o 
+
+PRINT	      = pr
+
+PROGRAM       = ../transf_atom.cgi 
+
+SHELL	      = /bin/sh
+
+SRCS	      = io_mmCIF.c \
+    	        PDB_from_mmCIF.c\
+    	        transf_atom.c
+
+all:		$(PROGRAM)
+
+$(PROGRAM):     $(OBJS) $(LIBS)
+		@echo "Linking $(PROGRAM) ..."
+		@$(LD) $(OBJS) $(LDFLAGS) $(LIBS)  -o $(PROGRAM)
+		@echo "done"
+

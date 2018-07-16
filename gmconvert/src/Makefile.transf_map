@@ -1,0 +1,48 @@
+CC	      = gcc
+
+CFLAGS	      = -O2 -g -Wall
+
+DEST	      = .
+
+EXTHDRS	      =
+
+HDRS	      = \
+
+INSTALL	      = /etc/install
+
+LD	      = gcc
+
+LDFLAGS	      = -O2 -g -Wall -lm
+
+LIBS	      = 
+
+MAKEFILE      = Makefile
+
+OBJS	      = transf_map.o\
+	        Voxel.o\
+	        HeapSort.o\
+	        MapCCP4.o
+
+PRINT	      = pr
+
+PROGRAM       = ../transf_map.cgi
+
+SHELL	      = /bin/sh
+
+SRCS	      = transf_map.c\
+	        Voxel.c\
+	        HeapSort.c\
+	        MapCCP4.c
+
+all:		$(PROGRAM)
+
+$(PROGRAM):     $(OBJS) $(LIBS)
+		@echo "Linking $(PROGRAM) ..."
+		@$(LD) $(OBJS) $(LDFLAGS) $(LIBS)  -o $(PROGRAM)
+		@echo "done"
+
+saxs:		$(PROGRAMX)
+$(PROGRAMX):    gmsaxs.o $(OBJS) $(LIBS)
+		@echo "Linking $(PROGRAMX) ..."
+		@$(LD) gmsaxs.o $(OBJS) $(LDFLAGS) $(LIBS)  -o $(PROGRAMX)
+		@echo "done"

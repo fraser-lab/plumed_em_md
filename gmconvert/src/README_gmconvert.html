@@ -1,0 +1,313 @@
+<HTML>
+<HEAD>
+<TITLE>
+Instruction for the "gmconvert" program
+</TITLE>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" LINK="#702020" VLINK="#202070">
+<CENTER>
+<H3>
+Instruction for the "gmconvert" program
+</H3>
+Takeshi Kawabata (kawabata@protein.osaka-u.ac.jp)<BR>
+Feb 23, 2016
+</CENTER>
+<HR>
+<UL>
+<LI><B>Outline</B>
+<P>
+
+The program <I>gmconvert</I> converts a various model of molecules (such as atomic model, 3D density map) into GMM (gaussian mixture model).
+EM (expectation maximization) algorithm is employed for covertion into GMM.
+The program <I>gmconvert</I> also has many other useful functions to handle GMM.
+
+<P>
+<LI><B>Install</B><P>
+The source code of <I>gmconvert</I> is written in C assuming the compiler "gcc" in Linux environment.  
+After you download the file "gmconvert-src-[date].tar.gz", just type following commands:
+<PRE>
+tar zxvf gmconvert-src-[date].tar.gz
+cd src
+make
+</PRE>
+Then you will find the execute file "gmconvert" in the upper directory (../src).
+
+<P>
+<LI><B>Basic Usage</B>
+  <P>
+  Both atom model and 3D density map can be conveted in GMM. 
+  <UL>
+  <LI> Convert Atom model in PDB into GMM<BR>
+  <PRE>
+  gmconvert -ipdb [atomic model in pdb] -ogmm [output GMM file] -ng [number of Gaussian functions]
+  </PRE>
+
+  <LI> Convert ATOM model in mmCIF into GMM<BR>
+  <PRE>
+  gmconvert -icif [atomic model in mmCIF] -assembly [assembly_id] -ogmm [output GMM file] -ng [number of Gaussian functions]
+  </PRE>
+
+  <LI> Convert 3D density map into GMM<BR>
+  <PRE>
+  gmconvert -imap [3D density map] -ogmm [output GMM file] -ng [number of Gaussian functions]
+  </PRE>
+  </UL>
+
+  The centers of generated GMM file is written in PDB format, they can be visualized by standard molecular viwers.
+  To check the details of the generated GMM, you can convert GMM into various formats.
+  <P>  
+  <UL>
+  <LI> Convert GMM into 3D density map<BR>
+  <PRE>
+  gmconvert -igmm [input GMM file] -omap [output 3D density map] -gw [grid_width]  
+  </PRE>
+  <LI> Convert GMM into PDB wireframe model<BR>
+  <PRE>
+  gmconvert -igmm [input GMM file] -opdb [wireframe model in PDB] -gw [grid_width]  
+  </PRE>
+  
+  <LI> Convert GMM into VRML wireframe model<BR>
+  <PRE>
+  gmconvert -igmm [input GMM file] -owrl [surface/wireframe model in VRML] -gw [grid_width]  
+  </PRE>
+
+  <LI> Convert GMM into VRML ellipsoidal model<BR>
+  <PRE>
+  gmconvert -igmm [input GMM file] -oewrl [ellipsoidal model in VRML]
+  </PRE>
+
+  <LI> Convert GMM into Wavefront *.obj surface model<BR>
+  <PRE>
+  gmconvert -igmm [input GMM file] -oobj [surface model in obj] -gw [grid_width]  
+  </PRE>
+
+  </UL>
+ 
+  A 3D density map is also converted into surface/wireframe model.  
+  <P> 
+  <UL>
+  <LI> Tansform 3D density map into a surface/wireframe model<BR>
+  <PRE>
+  gmconvert -imap [input 3D density map] -opdb [wireframe model in PDB]
+  gmconvert -imap [input 3D density map] -owrl [surface/wireframe model in VRML]
+  gmconvert -imap [input 3D density map] -oobj [surface in Object]
+  </PRE>
+  </UL> 
+
+  To test the performance of fitting programs, it is necessary to generate a simulated low density map from the atomi model.
+  <P> 
+  <UL>
+  <LI> Tansform PDB file into low resolution 3D density map<BR>
+  <PRE>
+  gmconvert -ipdb [atomic model in pdb] -omap [output 3D density map] -reso [resolution]
+  </PRE>
+  </UL> 
+
+
+  You may need to transform a GMM file so that the original PDB file is superimposed into the target PDB file.
+  <P> 
+  <UL>
+  <LI> Tansform GMM using the original and target PDB file <BR>
+  <PRE>
+  gmconvert -igmm [GMMfile] -ogmm [output transformed GMM file] -ipdb [original PDBfile] -itpdb [target PDB file] 
+  </PRE>
+  </UL>
+
+<LI><B>Options for EM algorithm</B>
+ <UL>
+ <LI> <CODE>-ng<CODE>   : number of Gaussian distribution functions. 
+ <LI> <CODE>-emalg<CODE>: Algorithm type for EM-algorithm.  The default is <CODE>-emalg G</CODE>.
+   <UL>
+   <LI><CODE>-emalg P</CODE> : Point-input EM.   A set of 3D points is employed as observed inputs for the EM algorithm.
+        In the case of atomic model, the centers of heavy atoms are used as the input 3D points.
+        In the case of 3D density map, the position of grids are used as the input 3D points with their density values.
+
+   <LI><CODE>-emalg G</CODE> : GMM-input EM. A set of 3D Gaussian distribution function(GDFs) 
+       is employed as observed inptus for the EM algorithm.
+       In the case of atomic model, one isotropic GDF is assigned to each heavy atom.  Its center is the center of the heavy atom.
+       The variance of the GDF is <CODE>rr2var</CODE> * [radius] * [radius], where [radius] is the atomic radius. 
+       In the case of 3D densitymap, one isotropic GDF is assigned to each grid.  Its center is the position of the grid.
+       The variance of the GDF is <CODE>ww2var</CODE> * [grid_width] * [grid_width].
+
+   <LI><CODE>-emalg O</CODE> : one-to-one_atom/grid.  It simply assigns one GDF to one atom or one grid. It does not perform any modification by the EM algorithm.
+   </UL>
+ <LI><CODE>-I    </CODE>: Initialization of GMM. 'K'-means, 'R'andom 'O':one-to-one_atom/voxel [K]
+ <LI><CODE>-delzw</CODE>: Delete Zero-weight gdfs from the GMM. ('T' or 'F') [T]
+ <LI><CODE>-delid</CODE>: Delete identical gdfs in the GMM. ('T' or 'F') [T]
+ </UL>
+<P>
+<LI><B>Options to convert atomic model into GMM</B>
+ <UL>
+ <LI>How to restrict atoms in the PDB file ?
+  <UL>
+  <LI><CODE>-hetatm</CODE>: Read HETATM ('T' or 'F') [F].<BR>                                                                                 
+     The defaul is <CODE>-hetatm F</CODE>, it means the program only read "ATOM" line.
+  
+  <LI><CODE>-ch</CODE>: Chain ID. (or 'auth_asym_id' in mmCIF).<BR>
+     The defaul is <CODE>-ch -</CODE>, it means the program reads all the chains in PDB file/mmCIF file.
+                                                                                         
+  <LI><CODE>-assembly</CODE>: assembly_id for mmCIF file (-icif) [].<BR>
+     The <CODE>assembly_id</CODE> in mmCiF file (such as 1,2,3,PAU,XAU,..) can be assingned. 
+     The program performs symmetrc operations  to asymmetric unit to generate XYZ coordinates of the assembly.
+     If the option <CODE>assembly_id</CODE> is not assigned, the program use the asymmetric unit.
+
+  <LI><CODE>-atmsel</CODE>: Atom selection. 'A'll atom except hydrogen, 'R'esidue-based (only ' CA ' and ' P ') [A]
+  <LI><CODE>-maxatm</CODE>: maximum allowed number of atoms for '-atmsel A'. If over '-minatmA', then change '-atmsel R'.[-1]            
+  <LI><CODE>-model</CODE>: 'S':read only single model (for NMR). 'M':read multiple models (for biological unit) [S]                     
+  </UL>
+
+ <LI>Other options for changing atom to gdf.
+   <UL>
+   <LI><CODE>-atmrw</CODE>: Model for radius and weight. 'A':atom model, 'R':residue model, 'U':uniform raidus/weight,'C':decide from content. [C]
+   <LI><CODE>-varatm</CODE>: Variance type for atom (for -emalg G). 'A': var = rr2var * Rvdw*Rvdw for each atom, 'R': var = (resoatm/2.0)^2.[A]
+   <LI><CODE>-rr2var</CODE>: Constant for variance = Const * Rvdw*Rvdw for -emalg G -varatm A. Default is 1/5. [0.200000].
+   <LI><CODE>-resoatm</CODE>: Resolution for atom for -emalg G -varatm R.  [0.000000]. 
+   <LI><CODE>-radtype</CODE>: radius type for '-atmrw A'. V:van der Waals radius, C:covalent radius  [V]
+   <LI><CODE>-raduni</CODE>: radius for uniform model for '-atmrw U'. [1.900000]
+   <LI><CODE>-ccatm</CODE> : Calculation Corr Coeff bwn Atoms and GMMs.(It takes times..) (T or F)[F]
+   </UL>
+ </UL>
+
+<P>
+<LI><B>Options to convert 3D density map into GMM</B>
+
+ <UL>
+ <LI>How to assign thereshold value of 3D density map ?  <P>
+  
+  The options <CODE>-zth</CODE> and <CODE>-zsd</CODE> specify the threshold value of 3D density map.
+  In order to get the proper GMM of the map, you should assign a proper threshold value, such as  the 'ContourLevel' value in EMDB entry.
+ <PRE>
+ -zth     : if density < [-zth], it is regarded as zero density. [-1.000000]
+ </PRE>
+
+ If a  density of a voxel is less than the <CODE>-zth</CODE> value,  its density is assigned as zero.
+ After that, the voxel is regarded as the place where no atom exists.  
+ Only positive <CODE>-zth</CODE> value is meaningful.  The negative <CODE>-zth</CODE> value will be ignored.
+
+ <PRE> 
+ -zsd     : if density < MEAN + [-zsd]*SD, it is regarded as zero density. [3.000000]
+ </PRE>
+ If you do not know the proper threshold value, the statistics of the density map will help you.
+ If the option <CODE>-zsd</CODE> is assigned, the threshold value is [MEAN of density] + <CODE>[-zth]</CODE> * [SD of density].
+ Only positive <CODE>-zsd</CODE> value is meaningful.  The negative <CODE>-zsd</CODE> value will be ignored.
+ If both <CODE>-zth</CODE> and <CODE>-zsd</CODE> are positive, the option <CODE>-zth</CODE> has a priority.
+ 
+
+ <P> 
+ <LI>How to fastly generate GMM for 3D density map ? 
+ <P>
+  A computational time for the EM algorithm is roughly proportional to [Number of data points] x [Number of Gaussian functions].
+  It means that a 256x256x256 map requires at least 64 times longer computatioanl time than the 64x64x64 map does. 
+  If you want to speed up the computation by decreasing resolution of density map, we recommend to use the '<CODE>-redsize</CODE>' option. 
+ <PRE>
+ -redsize :  reducing size scale (2,3,4,...)  [1]
+ </PRE>
+  If you add '<CODE>-redsize 2</CODE>', the program transforms 256x256x256 map into 128x128x128 map.  If you add '<CODE>-redsize 4</CODE>', the program transforms 256x256x256 map into 64x64x64 map.
+  <P>
+  A similar reduction of voxel size can be done by the option '<CODE>-maxsize</CODE>':
+  <PRE>
+ -maxsize : maximum voxel size of each axis(if over, reducing size). [-1]
+ </PRE>
+ If total number of the voxels s over the <CODE>-maxsize</CODE><SUP>3</SUP>, the program automatically set up the <CODE>-redsize</CODE> value 
+ so that number of voxels  is not over the <CODE>-maxsize</CODE><SUP>3</SUP>. For example, if the 180x180x120 map is given with the option '<CODE>-maxsize 64</CODE>', the program
+ set up the <CODE>-redsize</CODE> as 3, then the map becomes 60x60x40.
+ </UL>
+<P>
+<LI><B>Options for making surface/wireframe model</B>
+<UL>
+<LI>How to determine threshold density value for surface/wireframe model ?
+<BR>
+We parepare four methods to detemine threshold density values. 
+The reason why name of these four option has 'mc', we employ the Marching Cube algorithm
+to convert a density map into a surface/wireframe model.
+<PRE>
+-mcth:   raw density value for threshold density [-1000.000000]
+-mcsd:   SD value          for threshold density [3.000000]
+-mcnv:   number for voxel  for threshold density [-1]
+-mcvo:   volume (A^3)      for threshold density [-1.000000]
+</PRE>
+These four options are ignored if a minus value is assigned.
+In the default setting, the option <CODE>-mcsd 3.0</CODE> is assigned, it means that
+the threshold density map := [average density] + 3.0 * [standard deviation of density].
+If the putative volume of the molecule is known, you can assign the volume by the option <CODE>-mcvo</CODE>,
+in the angstrom cubed unit.
+<P>
+
+<LI>How to control the quality of surface/wireframe model ?
+<BR>
+The value of grid width controls the quality of surface/wireframe model,
+assigned by the option <CODE>-gw </CODE>. The default value is 4 angstrom.
+<PRE>
+-gw    : grid width (angstrom) [4.000000]
+</PRE>
+
+If you output in the VRML format (<CODE>-owrl</CODE>), you can chose surface model by the option <CODE>-mcSW S</CODE>.
+<PRE>
+-mcSW  : model type. 'S'urface, 'W'ireframe [W]
+</PRE>
+In the surface VRML model, you can assign the color of surface by the option <CODE>-mc RGBT </CODE>.
+
+<PRE>
+-mcRGBT: RGBT string (red:blue:green:transparency) [0:1:0:0]
+</PRE>
+</UL>
+
+
+
+<P>
+<LI><B>File format For GMM</B>
+<P>
+An example of GMM (PDBcode:1omp, number of gaussian = 2) is shown as follows:
+<HR>
+<PRE>
+HEADER 3D Gaussian Mixture Model
+REMARK COMMAND gmconvert -ipdb /DB/PDBv3/om/pdb1omp.ent -ng 2 -ogmm 1omp_g2.gmm
+REMARK START_DATE Feb 16,2013 16:40:19
+REMARK END_DATE   Feb 16,2013 16:40:19
+REMARK COMP_TIME_SEC  0.024982 2.498198e-02
+REMARK FILENAME 1omp_g2.gmm
+REMARK NGAUSS 2
+HETATM    1  GAU GAU A   1       1.491  -5.359 -14.106 0.473 0.473
+REMARK GAUSS   1 W 0.4731064444
+REMARK GAUSS   1 M 1.491210 -5.358893 -14.106107
+REMARK GAUSS   1 CovM  xx   68.3302668925 xy    1.4432837673 xz   20.6877652908
+REMARK GAUSS   1 CovM  yy   91.2978302824 yz   -0.6854124916 zz   78.2751151639
+HETATM    2  GAU GAU A   2      -1.303   4.885  12.899 0.527 0.527
+REMARK GAUSS   2 W 0.5268935556
+REMARK GAUSS   2 M -1.302614 4.884799 12.899464
+REMARK GAUSS   2 CovM  xx   99.7411943616 xy  -54.9586151001 xz    7.6722146525
+REMARK GAUSS   2 CovM  yy   99.9101607174 yz  -11.9555659402 zz   76.8822244943
+TER
+</PRE>
+<HR>
+
+This is a pseudo-PDB format.  If the molecular viewer program opens it as the PDB format,
+it reads only "HETATM" lines which describe centers of each Gaussian distribution function.
+However, the important information of this file is described in "REMARK" lines.
+
+Gaussian Mixture Model is the weighted sum of Gaussian Distribution Functions (GDFs).
+Its parameters are <I>Ngauss</I>(Number of GDFs) and  <I>Ngauss</I> sets of 
+{ weight, center postiion(x,y,z), covariance matrix(3x3)}.
+The covariance matrix (CovM) is a 3x3 symmetric matrix, it requires only six parameters(xx,xy,xz,yy,yz,zz). 
+These paramerers are described in a following format: 
+<PRE>
+REMARK NGAUSS [Number of GDFs for GMM]
+REMARK GAUSS   [GDFnumber] W [Weight for GDF] 
+REMARK GAUSS   [GDFnumber] M [Center position of GDF (x y z) ] 
+REMARK GAUSS   [GDFnumber] CovM  xx [xx of CovM]  xy  [xy of CovM] xz [xz of CovM] 
+REMARK GAUSS   [GDFnumber] CovM  yy [yy of CovM]  yz  [yz of CovM] zz [zz of CovM] 
+</PRE>
+</UL>
+</UL>
+
+<P>
+<LI><B>Reference</B><BR>
+  Kawabata, T.
+  Multiple subunit fitting into a low-resolution density map of a macromolecular complex using a gaussian mixture model.
+  <A HREF="http://www.sciencedirect.com/science/article/pii/S0006349508786041" TARGET=_BLANK>Biophys J 2008 Nov 15;95(10):4643-58.</A>
+  <A HREF="http://www.ncbi.nlm.nih.gov/pubmed/18708469" TARGET=_BLANK>[PubMed] </A>
+</UL>
+
+
+</BODY>
+</HTML>
