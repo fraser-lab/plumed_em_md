@@ -11,7 +11,7 @@
              <ScoreFunction name="dens" weights="beta_cart">
                  <Reweight scoretype="elec_dens_fast" weight="20"/>
                  <Set scale_sc_dens_byres="R:0.76,K:0.76,E:0.76,D:0.76,M:0.76, C:0.81,Q:0.81,H:0.81,N:0.81,T:0.81,S:0.81,Y:0.88,W:0.88, A:0.88,F:0.88,P:0.88,I:0.88,L:0.88,V:0.88"/>
-
+               </ScoreFunction>
              <ScoreFunction name="dens_tor" weights="beta">
                  <Reweight scoretype="elec_dens_fast" weight="20"/>
                  <Set scale_sc_dens_byres="R:0.76,K:0.76,E:0.76,D:0.76,M:0.76, C:0.81,Q:0.81,H:0.81,N:0.81,T:0.81,S:0.81,Y:0.88,W:0.88, A:0.88,F:0.88,P:0.88,I:0.88,L:0.88,V:0.88"/>
@@ -21,12 +21,12 @@
          <SetupForDensityScoring name="setupdens"/>
          <LoadDensityMap name="loaddens" mapfile="AC_SYMM_MASKED_10_ORIGIN_0.mrc"/>
 
-         <CartesianSampler name="longfrag" strategy="user" residues="50A-70A" rsd_wdw_to_refine="5" 
+         <CartesianSampler name="longfrag" strategy="user" residues="50A-70A" rsd_wdw_to_refine="5"
              scorefxn="cen" mcscorefxn="cen" fascorefxn="dens_soft" fragbias="density"
              rms="4" ncycles="200" fullatom="0" bbmove="1" nminsteps="25" temp="4"
              fraglens="11" nfrags="25"/>
 
-         <CartesianSampler name="shortfrag" strategy="user" residues="50A-70A" rsd_wdw_to_refine="5" 
+         <CartesianSampler name="shortfrag" strategy="user" residues="50A-70A" rsd_wdw_to_refine="5"
              scorefxn="cen" mcscorefxn="cen" fascorefxn="dens_soft" fragbias="density"
              rms="4" ncycles="200" fullatom="0" bbmove="1" nminsteps="25" temp="4"
              fraglens="5" nfrags="25"/>
