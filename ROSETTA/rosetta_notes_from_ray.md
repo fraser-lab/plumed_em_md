@@ -20,6 +20,8 @@ For the comparison problem, you can simply rescore the structures with the same 
 
 -nstruct
 -ignore_unrecognized_res
+<Add mover="loaddens"/> - switched to command line
+
 
 idealize_jd2.linuxgccrelease -database /netapp/home/jaimefraser/database -in::path ./ -in::file::s AC_SYMM.pdb  -no_optH -out::path ./ -out::path::pdb ./ -chainbreaks  -overwrite
 

@@ -70,7 +70,6 @@ fxml.write("""<ROSETTASCRIPTS>
      </MOVERS>
      <PROTOCOLS>
          <Add mover="setupdens"/>
-         <Add mover="loaddens"/>
          <Add mover="longfrag"/>
          <Add mover="shortfrag"/>
          <Add mover="relaxtors"/>
