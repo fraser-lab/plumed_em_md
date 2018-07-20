@@ -25,13 +25,13 @@ hostname
 date
 
 source /programs/sbgrid.shrc
-rosetta_scripts.linuxgccrelease -database /netapp/home/jaimefraser/database -in::file::s {pdb} -edensity::mapfile {map} -parser::protocol new_multi_ray.xml   -edensity::mapreso 3.5 -default_max_cycles 200 -edensity::cryoem_scatterers -out::suffix _asymm -crystal_refine -beta
+rosetta_scripts.linuxgccrelease -database /netapp/home/jaimefraser/database -in::file::s {pdb} -edensity::mapfile {map} -parser::protocol new_multi_local.xml   -edensity::mapreso 3.5 -default_max_cycles 200 -edensity::cryoem_scatterers -out::suffix _asymm -crystal_refine -beta
 
 date
 """.format(pdb=pdb_ideal,map=map)) #SUFFIX can be $SGE_TASK_ID
 fout.close()
 
-fxml = open("new_multi_ray.xml","w")
+fxml = open("new_multi_local.xml","w")
 fxml.write("""<ROSETTASCRIPTS>
      <SCOREFXNS>
          <ScoreFunction name="cen" weights="score4_smooth_cart">
