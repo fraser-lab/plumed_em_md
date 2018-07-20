@@ -9,8 +9,8 @@ fout = open("launch_idealize.sh","w")
 fout.write("""#!/bin/bash
 #
 #$ -S /bin/bash
-#$ -o /netapp/home/jaimefraser/out
-#$ -e /netapp/home/jaimefraser/err
+#$ -o ./out
+#$ -e ./err
 #$ -cwd
 #$ -r y
 #$ -j y
