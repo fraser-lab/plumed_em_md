@@ -19,14 +19,12 @@
      </SCOREFXNS>
      <MOVERS>
          <SetupForDensityScoring name="setupdens"/>
-         <LoadDensityMap name="loaddens" mapfile="AC_SYMM_MASKED_10_ORIGIN_0.mrc"/>
-
-         <CartesianSampler name="longfrag" strategy="user" residues="50A-70A" rsd_wdw_to_refine="5"
+         <CartesianSampler name="longfrag" strategy="user" residues="21A-63A" rsd_wdw_to_refine="5"
              scorefxn="cen" mcscorefxn="cen" fascorefxn="dens_soft" fragbias="density"
              rms="4" ncycles="200" fullatom="0" bbmove="1" nminsteps="25" temp="4"
              fraglens="11" nfrags="25"/>
 
-         <CartesianSampler name="shortfrag" strategy="user" residues="50A-70A" rsd_wdw_to_refine="5"
+         <CartesianSampler name="shortfrag" strategy="user" residues="21A-63A" rsd_wdw_to_refine="5"
              scorefxn="cen" mcscorefxn="cen" fascorefxn="dens_soft" fragbias="density"
              rms="4" ncycles="200" fullatom="0" bbmove="1" nminsteps="25" temp="4"
              fraglens="5" nfrags="25"/>
