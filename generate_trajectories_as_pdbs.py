@@ -21,7 +21,7 @@ protein: GROUP NDX_FILE=index.ndx NDX_GROUP=Protein
 water: GROUP NDX_FILE=index.ndx NDX_GROUP=Water
 
 # make protein whole: add reference position of first heavy atom (in nm)
-WHOLEMOLECULES ADDREFERENCE ENTITY0=protein  REF0=%s
+WHOLEMOLECULES ADDREFERENCE ENTITY0=protein REF0=%s
 
 DUMPATOMS STRIDE=10 FILE=traj%i.gro ATOMS=protein
 """ %(ref,traj))
