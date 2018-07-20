@@ -32,4 +32,4 @@ DUMPATOMS STRIDE=10 FILE=traj%i.gro ATOMS=protein
 # TO analyze water specifically FOLLOW RECIPE on page 18-19-20 of plumed_chapter.pdf
 
 p = Pool(8)
-print(p.map(convert_to_gro,range(0,1,1)))
+print(p.map(convert_to_gro,range(0,8,1)))
