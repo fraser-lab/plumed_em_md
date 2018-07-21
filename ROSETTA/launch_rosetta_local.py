@@ -2,9 +2,13 @@ import argparse
 parser = argparse.ArgumentParser()
 parser.add_argument("--pdb", help="pdb file name output from idealize",required=True)
 parser.add_argument("--map", help="map file name ",required=True)
+parser.add_argument("--tasks", help="number of jobs to submit",required=True,type=int)
+parser.add_argument("--nstruct", help="number of structures to generate per job",required=True,type=int)
 args = parser.parse_args()
 pdb_ideal = args.pdb
 map = args.map
+nstruct = args.nstruct
+tasks = args.tasks
 
 fout = open("launch_rosetta_refine.sh","w")
 
@@ -20,15 +24,15 @@ fout.write("""#!/bin/bash
 #$ -l arch=linux-x64
 #$ -l netapp=1G,scratch=1G
 #$ -l h_rt=80:00:00
-#$ -t 1-20
+#$ -t 1-{tasks}
 hostname
 date
 
 source /programs/sbgrid.shrc
-rosetta_scripts.linuxgccrelease -database /netapp/home/jaimefraser/database -in::file::s {pdb} -edensity::mapfile {map} -parser::protocol new_multi_local.xml   -edensity::mapreso 3.5 -default_max_cycles 200 -edensity::cryoem_scatterers -out::suffix $SGE_TASK_ID -crystal_refine -beta -nstruct 20
+rosetta_scripts.linuxgccrelease -database /netapp/home/jaimefraser/database -in::file::s {pdb} -edensity::mapfile {map} -parser::protocol new_multi_local.xml   -edensity::mapreso 3.5 -default_max_cycles 200 -edensity::cryoem_scatterers -out::suffix $SGE_TASK_ID -crystal_refine -beta -nstruct {nstruct}
 
 date
-""".format(pdb=pdb_ideal,map=map)) #SUFFIX can be $SGE_TASK_ID
+""".format(pdb=pdb_ideal,map=map,tasks=tasks,nstruct=nstruct)) #SUFFIX can be $SGE_TASK_ID
 fout.close()
 
 fxml = open("new_multi_local.xml","w")
