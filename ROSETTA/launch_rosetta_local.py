@@ -20,12 +20,12 @@ fout.write("""#!/bin/bash
 #$ -l arch=linux-x64
 #$ -l netapp=1G,scratch=1G
 #$ -l h_rt=80:00:00
-
+#$ -t 1-20
 hostname
 date
 
 source /programs/sbgrid.shrc
-rosetta_scripts.linuxgccrelease -database /netapp/home/jaimefraser/database -in::file::s {pdb} -edensity::mapfile {map} -parser::protocol new_multi_local.xml   -edensity::mapreso 3.5 -default_max_cycles 200 -edensity::cryoem_scatterers -out::suffix _asymm -crystal_refine -beta
+rosetta_scripts.linuxgccrelease -database /netapp/home/jaimefraser/database -in::file::s {pdb} -edensity::mapfile {map} -parser::protocol new_multi_local.xml   -edensity::mapreso 3.5 -default_max_cycles 200 -edensity::cryoem_scatterers -out::suffix $SGE_TASK_ID -crystal_refine -beta -nstruct 20
 
 date
 """.format(pdb=pdb_ideal,map=map)) #SUFFIX can be $SGE_TASK_ID
