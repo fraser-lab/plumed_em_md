@@ -4,16 +4,11 @@ parser.add_argument("--pdb", help="pdb file name output from idealize",required=
 parser.add_argument("--map", help="map file name ",required=True)
 parser.add_argument("--rms", help="rms to sample ",default=2.0)
 parser.add_argument("--resolution", help="reported resolution ",required=True, type=float)
-parser.add_argument("--tasks", help="number of jobs to submit",required=True,type=int)
-parser.add_argument("--nstruct", help="number of structures to generate per job",required=True,type=int)
-
 args = parser.parse_args()
 pdb_ideal = args.pdb
 map = args.map
 rms = args.rms
 resolution = args.resolution
-nstruct = args.nstruct
-tasks = args.tasks
 
 ### FROM GABE LANDER:
 # determine electron density weight
@@ -21,7 +16,7 @@ tasks = args.tasks
 # this value should be 10 for 3A, 20-25 for 3.5-4A, and 50-60 for 4.5-5A
 dens = 5
 if resolution > 2.8:
-    dens = int(resolution-2.58)/0.0411)
+    dens = int((resolution-2.58)/0.0411)
 print "\n\n\ndensity weight set to {dens}\n\n\n".format(dens=dens)
 
 fout = open("launch_rosetta_refine.sh","w")
@@ -38,16 +33,15 @@ fout.write("""#!/bin/bash
 #$ -l arch=linux-x64
 #$ -l netapp=1G,scratch=1G
 #$ -l h_rt=80:00:00
-#$ -t 1-{tasks}
 
 hostname
 date
 
 source /programs/sbgrid.shrc
-rosetta_scripts.linuxgccrelease -database /netapp/home/jaimefraser/database -in::file::s {pdb} -edensity::mapfile {map} -parser::protocol new_multi_local.xml   -edensity::mapreso {resolution} -default_max_cycles 200 -edensity::cryoem_scatterers -out::suffix _asymm -crystal_refine -beta -nstruct {nstruct} -parser::script_vars denswt={dens} rms={rms}
+rosetta_scripts.linuxgccrelease -database /netapp/home/jaimefraser/database -in::file::s {pdb} -edensity::mapfile {map} -parser::protocol new_multi_global.xml   -edensity::mapreso {resolution} -default_max_cycles 200 -edensity::cryoem_scatterers -out::suffix _asymm -crystal_refine -beta -parser::script_vars denswt={dens} rms={rms}
 
 date
-""".format(pdb=pdb_ideal,map=map,dens=dens,rms=rms,resolution=resolution,nstruct=nstruct,tasks=tasks))
+""".format(pdb=pdb_ideal,map=map,dens=dens,rms=rms,resolution=resolution)) #SUFFIX can be $SGE_TASK_ID
 fout.close()
 
 fxml = open("new_multi_global.xml","w")
