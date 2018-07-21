@@ -16,7 +16,7 @@ resolution = args.resolution
 # this value should be 10 for 3A, 20-25 for 3.5-4A, and 50-60 for 4.5-5A
 dens = 5
 if resolution > 2.8:
-    dens = int(resolution-2.58)/0.0411)
+    dens = int((resolution-2.58)/0.0411)
 print "\n\n\ndensity weight set to {dens}\n\n\n".format(dens=dens)
 
 fout = open("launch_rosetta_refine.sh","w")
@@ -38,7 +38,7 @@ hostname
 date
 
 source /programs/sbgrid.shrc
-rosetta_scripts.linuxgccrelease -database /netapp/home/jaimefraser/database -in::file::s {pdb} -edensity::mapfile {map} -parser::protocol new_multi_local.xml   -edensity::mapreso {resolution} -default_max_cycles 200 -edensity::cryoem_scatterers -out::suffix _asymm -crystal_refine -beta -parser::script_vars denswt={dens} rms={rms}
+rosetta_scripts.linuxgccrelease -database /netapp/home/jaimefraser/database -in::file::s {pdb} -edensity::mapfile {map} -parser::protocol new_multi_global.xml   -edensity::mapreso {resolution} -default_max_cycles 200 -edensity::cryoem_scatterers -out::suffix _asymm -crystal_refine -beta -parser::script_vars denswt={dens} rms={rms}
 
 date
 """.format(pdb=pdb_ideal,map=map,dens=dens,rms=rms,resolution=resolution)) #SUFFIX can be $SGE_TASK_ID
