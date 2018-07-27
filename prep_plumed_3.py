@@ -61,8 +61,7 @@ p = Pool(n_proc)
 print(p.map(create_topols,range(0,8,1)))
 
 fout = open("plumed.dat","w")
-fout.write("""
-# RESTART
+fout.write("""# RESTART
 # include topology info: this is needed to identify atom types
 MOLINFO STRUCTURE=structure.pdb
 
