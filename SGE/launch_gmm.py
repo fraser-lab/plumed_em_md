@@ -6,12 +6,15 @@ parser.add_argument("--gmconvert_location", help="location of custom gmconvert",
 parser.add_argument("--sbgrid_gmconvert_location", help="location of sbgrid gmconvert",default="/programs/x86_64-linux/gmconvert/20180516/bin/gmconvert")
 args = parser.parse_args()
 
+
 n_proc = int(args.n_proc)
 input_map = args.input_map
 gmconvert_location = args.gmconvert_location
+#/netapp/home/jaimefraser/gmconvert/gmconvert
 sbgrid_gmconvert = args.sbgrid_gmconvert_location
+#identical on qb3 and orion
 
-fout = open("launch_prep.sh","w")
+fout = open("launch_gmm.sh","w")
 
 fout.write("""#!/bin/bash
 #
@@ -29,11 +32,11 @@ fout.write("""#!/bin/bash
 hostname
 date
 
-python /netapp/home/jaimefraser/plumed_em_md/launch_gmm.py --n_proc {nproc} --input_map {input_map} --gmconvert_location /netapp/home/jaimefraser/gmconvert/gmconvert
+python /netapp/home/jaimefraser/plumed_em_md/launch_gmm.py --n_proc {n_proc} --input_map {input_map} --gmconvert_location {gmconvert_location}  --sbgrid_gmconvert_location {sbgrid_gmconvert}
 
 date
-""".format(pdb=pdb))
+""".format(n_proc=n_proc,input_map=input_map, gmconvert_location=gmconvert_location, sbgrid_gmconvert=sbgrid_gmconvert))
 fout.close()
 
 import os
-os.system("qsub launch_prep.sh")
+os.system("qsub launch_gmm.sh")
