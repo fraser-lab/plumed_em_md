@@ -32,7 +32,7 @@ fout.write("""#!/bin/bash
 hostname
 date
 
-python /netapp/home/jaimefraser/plumed_em_md/launch_gmm.py --n_proc {n_proc} --input_map {input_map} --gmconvert_location {gmconvert_location}  --sbgrid_gmconvert_location {sbgrid_gmconvert}
+python /netapp/home/jaimefraser/plumed_em_md/generate_gmm.py --n_proc {n_proc} --input_map {input_map} --gmconvert_location {gmconvert_location}  --sbgrid_gmconvert_location {sbgrid_gmconvert}
 
 date
 """.format(n_proc=n_proc,input_map=input_map, gmconvert_location=gmconvert_location, sbgrid_gmconvert=sbgrid_gmconvert))
