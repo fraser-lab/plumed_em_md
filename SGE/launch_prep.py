@@ -17,7 +17,7 @@ fout.write("""#!/bin/bash
 #$ -l mem_free=1G
 #$ -l arch=linux-x64
 #$ -l netapp=1G,scratch=1G
-#$ -l h_rt=48:00:00
+#$ -l h_rt=80:00:00
 
 hostname
 date
@@ -25,7 +25,7 @@ echo {pdb}
 source /netapp/home/jaimefraser/plumed2/sourceme.sh
 source /netapp/home/jaimefraser/gromacs-2016.5-bin/bin/GMXRC
 python /netapp/home/jaimefraser/plumed_em_md/prep_directory.py
-python /netapp/home/jaimefraser/plumed_em_md/prep_plumed.py --pdb {pdb}
+python /netapp/home/jaimefraser/plumed_em_md/prep_plumed.py --input_pdb {pdb}
 
 date
 """.format(pdb=pdb))
