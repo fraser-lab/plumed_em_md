@@ -47,4 +47,5 @@ CORRELATION BETWEEN GMM and ORIGINAL MAP:
 
 %s
 
+run convert_GMM2PLUMED.sh to generate final dat file for PLUMED
 """ %out)

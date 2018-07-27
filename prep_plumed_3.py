@@ -104,7 +104,15 @@ fout.close()
 print("""
 You should be set to run:
 
-mpirun -n 24 gmx_mpi mdrun -plumed -multi 8 -ntomp 1
+mpirun -n 8 gmx_mpi mdrun -plumed -multi 8 -ntomp 1
 
-and can analyze on the fly or at end with generate_trajectories_as_pdbs.py
+if you need to restart:
+Edit plumed.dat
+Uncomment out #RESTART
+Then on command line try:
+mpirun -n 8 gmx_mpi mdrun -plumed -multi 8 -ntomp 1 -cpi state
+
+
+you can analyze on the fly or at end with:
+generate_trajectories_as_pdbs.py
 """)
