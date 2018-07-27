@@ -24,8 +24,8 @@ date
 
 source /netapp/home/jaimefraser/plumed2/sourceme.sh
 source /netapp/home/jaimefraser/gromacs-2016.5-bin/bin/GMXRC
-/netapp/home/jaimefraser/plumed_em_md/prep_directory.py
-/netapp/home/jaimefraser/plumed_em_md/prep_plumed.py --pdb
+python /netapp/home/jaimefraser/plumed_em_md/prep_directory.py
+python /netapp/home/jaimefraser/plumed_em_md/prep_plumed.py --pdb {pdb}
 
 date
 """.format(pdb=pdb))
