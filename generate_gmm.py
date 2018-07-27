@@ -1,16 +1,19 @@
 from multiprocessing import Pool
 import os
-gmconvert_location = "/home/jfraser/gmconvert/gmconvert"
-sbgrid_gmconvert = "/programs/x86_64-linux/gmconvert/20180516/bin/gmconvert"
+
 
 import argparse, sys
 parser = argparse.ArgumentParser()
 parser.add_argument("--input_map", help="full path to the input map for simulation",required=True)
 parser.add_argument("--n_proc", help="number of threads to use",required=True)
+parser.add_argument("--gmconvert_location", help="location of custom gmconvert",default="/home/jfraser/gmconvert/gmconvert")
+parser.add_argument("--sbgrid_gmconvert_location", help="location of sbgrid gmconvert",default="/programs/x86_64-linux/gmconvert/20180516/bin/gmconvert")
 args = parser.parse_args()
 
 n_proc = int(args.n_proc)
 input_map = args.input_map
+gmconvert_location = args.gmconvert_location
+sbgrid_gmconvert = args.sbgrid_gmconvert_location
 
 os.system("{gmconvert} -imap {map} -oimap output-0.0.mrc -zth 0.0".format(map=input_map, gmconvert=gmconvert_location))
 os.mkdir("ITER_0")
