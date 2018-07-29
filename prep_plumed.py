@@ -1,8 +1,11 @@
 import argparse, sys
 parser = argparse.ArgumentParser()
 parser.add_argument("--input_pdb", help="full path to the input pdb for simulation",required=True)
+parser.add_argument("--n_proc", help="number of threads to use",required=True,type=int)
+
 args = parser.parse_args()
 input_pdb = args.input_pdb
+n_proc = int(args.n_proc)
 
 import os
 os.system("printf \"9\n1\" | gmx_mpi pdb2gmx -f {pdb} -ignh".format(pdb=input_pdb))
@@ -14,8 +17,9 @@ os.system("gmx_mpi mdrun -c conf_emin.gro -ntomp 16")
 os.system("gmx_mpi grompp -f npt_2016.mdp -c conf_emin.gro")
 
 #this one takes some time
-os.system("gmx_mpi mdrun -c conf_npt.gro -nsteps 250000 -ntomp 16")
+os.system("mpirun -n {n_proc} gmx_mpi mdrun -c conf_npt.gro -nsteps 250000 -ntomp 1".format(n_proc=n_proc))
 #this one takes some time
+# mpirun -n 8 gmx_mpi mdrun -c conf_emin.gro -ntomp 1
 
 os.system("gmx_mpi grompp -f nvt_2016_EQUIL.mdp -c conf_npt.gro")
 
@@ -26,7 +30,7 @@ os.system("gmx_mpi grompp -f nvt_2016_EQUIL.mdp -c conf_npt.gro")
 # this will generate greater diversity in the nvt simulation
 
 #this one takes some time
-os.system("gmx_mpi mdrun -c conf_nvt.gro -nsteps 1000000 -ntomp 16")
+os.system("mpirun -n {n_proc} gmx_mpi mdrun -c conf_nvt.gro -nsteps 1000000 -ntomp 1".format(n_proc=n_proc)
 #this one takes some time
 
 for i in range(0,8,1):
