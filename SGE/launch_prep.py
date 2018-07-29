@@ -20,14 +20,14 @@ fout.write("""#!/bin/bash
 #$ -R yes               # SGE host reservation, highly recommended
 #$ -cwd                 # Current working directory
 #$ -l h_rt=80:00:00
-
+#$ -V
 
 hostname
 date
 
 module load openmpi-1.8-x86_64
 source /netapp/home/jaimefraser/plumed2/sourceme.sh
-source /netapp/home/jaimefraser/gromacs-2016.5-bin/bin/GMXRC
+source /netapp/home/jaimefraser/gromacs-rdtscp/bin/GMXRC
 export OMP_NUM_THREADS=1
 
 python /netapp/home/jaimefraser/plumed_em_md/prep_directory.py
