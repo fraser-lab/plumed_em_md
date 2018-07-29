@@ -1,6 +1,6 @@
 import argparse
 parser = argparse.ArgumentParser()
-parser.add_argument("--pdb", help="pdb file name to run",required=True)\
+parser.add_argument("--pdb", help="pdb file name to run",required=True)
 parser.add_argument("--n_proc", help="number of threads to use",required=True,type=int)
 
 args = parser.parse_args()
