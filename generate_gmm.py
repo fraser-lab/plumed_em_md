@@ -41,8 +41,6 @@ os.chdir("ITER_1")
 # os.system("cat map_*/*.gmm > 1.gmm")
 # os.system("{gmconvert} VcmpG -igmm 1.gmm -imap ../{map} -zth 0.0 -omap iter_1.mrc > iter_1.log".format(map=input_map, gmconvert=sbgrid_gmconvert))
 
-# from subprocess import check_output
-
 try:
     from subprocess import STDOUT, check_output, CalledProcessError
 except ImportError:  # pragma: no cover
