@@ -30,7 +30,7 @@ os.system("gmx_mpi grompp -f nvt_2016_EQUIL.mdp -c conf_npt.gro")
 # this will generate greater diversity in the nvt simulation
 
 #this one takes some time
-os.system("mpirun -n {n_proc} gmx_mpi mdrun -c conf_nvt.gro -nsteps 1000000 -ntomp 1".format(n_proc=n_proc)
+os.system("mpirun -n {n_proc} gmx_mpi mdrun -c conf_nvt.gro -nsteps 1000000 -ntomp 1".format(n_proc=n_proc))
 #this one takes some time
 
 for i in range(0,8,1):
