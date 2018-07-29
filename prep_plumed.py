@@ -13,7 +13,7 @@ os.system("gmx_mpi editconf -f conf.gro -bt dodecahedron -d 1.0 -o conf_box.gro"
 os.system("printf \"0\n0\" | gmx_mpi trjconv -f conf_box.gro -s conf.gro -fit translation -o conf_box_oriented.gro")
 os.system("gmx_mpi solvate -cp conf_box_oriented.gro -cs spc216.gro -p topol.top -o conf_water.gro")
 os.system("gmx_mpi grompp -f em_2016.mdp -c conf_water.gro")
-os.system("gmx_mpi mdrun -c conf_emin.gro -ntomp 16")
+os.system("mpirun -n {n_proc} gmx_mpi mdrun -c conf_emin.gro -ntomp 1".format(n_proc=n_proc))
 os.system("gmx_mpi grompp -f npt_2016.mdp -c conf_emin.gro")
 
 #this one takes some time
