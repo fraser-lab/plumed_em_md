@@ -3,7 +3,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument("--map_dat", help="full path to the GMM dat file for the map",required=True)
 parser.add_argument("--n_proc", help="number of threads to use",required=True)
 args = parser.parse_args()
-map_plumed_dat_file = args.map_dat
+map_dat = args.map_dat
 n_proc = int(args.n_proc)
 
 
