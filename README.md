@@ -13,24 +13,24 @@ Requires:
 Install:
 - confirm gcc and mpicc match (on qb3 scl enable devtoolset-7 bash, module load openmpi-1.8-x86_64)
 - compile plumed
- - git clone https://github.com/plumed/plumed2.git
- - cd plumed2
- - git checkout isdb
- - ./configure --disable-python
- - make -j 12
-- compile GROMACS
- - wget http://ftp.gromacs.org/pub/gromacs/gromacs-2016.5.tar.gz
- - tar -xvf gromacs-2016.5.tar.gz
- - cd /netapp/home/jaimefraser/gromacs-2016.5
- - plumed-patch -p --shared
- - Choose gromacs-2016.5 (option 2)
- - mkdir build
- - cd build
- - mkdir /netapp/home/jaimefraser/gromacs-2016.5-bin/
- - cmake ../ -DBUILD_SHARED_LIBS=ON -DGMX_OPENMP=OFF -DGMX_THREAD_MPI=OFF -DGMX_GPU=OFF -DCMAKE_INSTALL_PREFIX=/netapp/home/jaimefraser/gromacs-2016.5-bin/ -DCMAKE_CXX_COMPILER=mpic++ -DCMAKE_C_COMPILER=mpicc -DGMX_MPI=ON -DGMX_USE_RDTSCP=off
-  - Need the RDTSCP off b/c iqint is different subtly than some other nodes!I
- - make -j 12
- - make install
+  - git clone https://github.com/plumed/plumed2.git
+  - cd plumed2
+  - git checkout isdb
+  - ./configure --disable-python
+  - make -j 12
+  compile GROMACS
+  - wget http://ftp.gromacs.org/pub/gromacs/gromacs-2016.5.tar.gz
+  - tar -xvf gromacs-2016.5.tar.gz
+  - cd /netapp/home/jaimefraser/gromacs-2016.5
+  - plumed-patch -p --shared
+  - Choose gromacs-2016.5 (option 2)
+  - mkdir build
+  - cd build
+  - mkdir /netapp/home/jaimefraser/gromacs-2016.5-bin/
+  - cmake ../ -DBUILD_SHARED_LIBS=ON -DGMX_OPENMP=OFF -DGMX_THREAD_MPI=OFF -DGMX_GPU=OFF -DCMAKE_INSTALL_PREFIX=/netapp/home/jaimefraser/gromacs-2016.5-bin/ -DCMAKE_CXX_COMPILER=mpic++ -DCMAKE_C_COMPILER=mpicc -DGMX_MPI=ON -DGMX_USE_RDTSCP=off
+    - Need the RDTSCP off b/c iqint is different subtly than some other nodes!I
+  - make -j 12
+  - make install
 
 Edit bash_profile or launch scripts to include:
 - source ~/plumed2/sourceme.sh
@@ -45,6 +45,7 @@ Prep simulation:
 - prep_plumed.py - equilibrates
 - prep_plumed_2.py - sets up simulation
 - prep_plumed_3.py - outputs command to run simulation
+  - One significant change relative to published method, we remove negative scatterers from contributing to the density calculation (in prep_plumed_3).
 - simulation can then be run on command line
 
 On SGE:
