@@ -29,11 +29,10 @@ source /netapp/home/jaimefraser/plumed2/sourceme.sh
 source /netapp/home/jaimefraser/gromacs-rdtscp/bin/GMXRC
 export OMP_NUM_THREADS=1
 
-python /netapp/home/jaimefraser/plumed_em_md/prep_directory.py
-python /netapp/home/jaimefraser/plumed_em_md/prep_plumed.py --input_pdb {pdb} --n_proc {n_proc}
+python /netapp/home/jaimefraser/plumed_em_md/prep_plumed_3.py --map_dat {map_dat} --n_proc {n_proc}
 
 date
-""".format(pdb=pdb,n_proc=n_proc))
+""".format(map_dat=map_dat,n_proc=n_proc))
 fout.close()
 
 import os
