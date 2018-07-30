@@ -28,7 +28,7 @@ Install:
   - cd build
   - mkdir /netapp/home/jaimefraser/gromacs-2016.5-bin/
   - cmake ../ -DBUILD_SHARED_LIBS=ON -DGMX_OPENMP=OFF -DGMX_THREAD_MPI=OFF -DGMX_GPU=OFF -DCMAKE_INSTALL_PREFIX=/netapp/home/jaimefraser/gromacs-2016.5-bin/ -DCMAKE_CXX_COMPILER=mpic++ -DCMAKE_C_COMPILER=mpicc -DGMX_MPI=ON -DGMX_USE_RDTSCP=off
-    - Need the RDTSCP off b/c iqint is different subtly than some other nodes!I
+    - Need the DGMX_USE_RDTSCP flag off b/c iqint is different subtly than some other nodes on qb3 cluster! if using in an environment with only one CPU type, delete that flag.
   - make -j 12
   - make install
 
@@ -45,7 +45,7 @@ Prep simulation:
 - prep_plumed.py - equilibrates
 - prep_plumed_2.py - sets up simulation
 - prep_plumed_3.py - outputs command to run simulation
-  - One significant change relative to published method, we remove negative scatterers from contributing to the density calculation (in prep_plumed_3).
+  - One significant change relative to published method, we remove negative scatterers from contributing to the density calculation.
 - simulation can then be run on command line
 
 On SGE:
