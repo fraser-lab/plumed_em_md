@@ -16,7 +16,7 @@ fout.write("""#!/bin/bash
 #$ -e ./err
 #$ -l arch=linux-x64    # Specify architecture, required
 #$ -l mem_free=1G       # Memory usage, required.  Note that this is per slot
-#$ -pe ompi {n_proc}            # Specify parallel environment and number of slots
+#$ -pe ompi_onehost {n_proc}            # Specify parallel environment and number of slots
 #$ -R yes               # SGE host reservation, highly recommended
 #$ -cwd                 # Current working directory
 #$ -l h_rt=80:00:00
