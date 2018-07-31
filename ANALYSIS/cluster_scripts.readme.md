@@ -2,7 +2,7 @@ Clustering proceeds in steps:
 
 1) you concatenate all the trajectories of all the replicas, using gromacs trjcat utility:
 
-gmx_mpi trjcat -f traj*.xtc -o traj_all.xtc -cat 
+gmx_mpi trjcat -f traj*.xtc -o traj_all.xtc -cat
 
 It is better to work with the xtc files, which contain no water, just the protein.
 If traj_all.xtc contains more than, let’s say, 30000 frames, you can write one every N frames:
@@ -24,7 +24,7 @@ gmx_mpi trjconv -f traj_all.xtc -o traj_all_small.xtc -skip N
 
 2) once you have M RMSD sub-matrices (one per core used), you can do the actual clustering.
     You need to compile gromos_clustering.cpp, which implements the clustering method of GROMACS (gmx_mpi cluster), in a more efficient way.
-    This code is serial, and an example of command line is in go_cluster.pbs. 
+    This code is serial, and an example of command line is in go_cluster.pbs.
 
 3) The output of gromos_clustering are two files: log.dat and trajectory.dat.
      log.dat contains a list of clusters, their population, and the frame number (zero based) of the cluster center
@@ -35,3 +35,6 @@ gmx_mpi trjconv -f traj_all.xtc -o traj_all_small.xtc -skip N
     You need to remember the frame id of all the frames belonging to the first and second half of the simulation.
     At this point, you can recalculate the clusters populations using only the first or last half of the simulation.
     At convergence, they should be consistent within a few percent (even 10% is ok).
+
+
+May also want to check out ENCORE which is now a part of MDAnalysis
