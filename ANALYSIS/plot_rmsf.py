@@ -19,4 +19,4 @@ rmsfer = RMSF(loop_ca, verbose=True).run()
 
 import matplotlib.pyplot as plt
 
-plt.plot(calphas.resnums, rmsfer.rmsf)
+plt.plot(loop_ca.resnums, rmsfer.rmsf)
