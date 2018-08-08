@@ -20,3 +20,4 @@ rmsfer = RMSF(loop_ca, verbose=True).run()
 import matplotlib.pyplot as plt
 
 plt.plot(loop_ca.resnums, rmsfer.rmsf)
+plt.savefig("rmsf.png")
