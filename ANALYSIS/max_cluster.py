@@ -1,5 +1,6 @@
 from subprocess import check_output
 import argparse
+import os
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--xtc", help="trajectory xtc file",required=True)
