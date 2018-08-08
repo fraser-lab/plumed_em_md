@@ -6,7 +6,7 @@ parser.add_argument("--skip", help="number of frames to skip in writing xtc",typ
 args = parser.parse_args()
 replicas = args.replicas
 prefix = args.prefix
-
+skip = args.skip
 
 import os
 
