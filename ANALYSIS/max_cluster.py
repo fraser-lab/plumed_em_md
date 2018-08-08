@@ -1,6 +1,7 @@
 from subprocess import check_output
 import argparse
 import os
+from multiprocessing import Pool
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--xtc", help="trajectory xtc file",required=True)
@@ -20,14 +21,31 @@ max_calc = int((frames*(frames-1))/2)
 #number of calcs per job
 calcs_per_job = int(max_calc/nproc)
 jobs = list(range(0,max_calc,calcs_per_job))
-print jobs
+print(jobs, max_calc, calcs_per_job,len(jobs))
+
+job_assign = []
+
 for i,calculation in enumerate(jobs):
-    if i+1 > len(jobs):
+    if i+1.1 > len(jobs):
         print(i,calculation,max_calc)
     else:
         print(i,calculation,jobs[i+1])
 
+
 #farm out RMSD calculations
+
+def calculate_rmsds(i):
+    # os.system("python traj_rmsd.py structure.pdb reconstruct_small.xtc {i}.log 0 528 ")
+    if i+1.1 > len(jobs):
+        j = max_calc
+    else:
+        j = jobs[i+1]
+    os.system("python ~/plumed_em_md/ANALYSIS/traj_rmsd.py structure.pdb {xtc} {i}.log {start} {stop}".format(xtc=xtc,i=i,start=jobs[i],stop=j))
+    return
+
+p = Pool(nproc)
+print(p.map(calculate_rmsds,range(0,len(jobs),1)))
+
 #concatenate RMSD logs
 #cluster
 #pull out exemplars
