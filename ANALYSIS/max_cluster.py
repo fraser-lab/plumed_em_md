@@ -22,7 +22,7 @@ calcs_per_job = int(max_calc/nproc)
 jobs = list(range(0,max_calc,calcs_per_job))
 
 for i,calculation in enumerate(jobs):
-    print(i,calculations,jobs[i+1])
+    print(i,calculation,jobs[i+1])
 
 #farm out RMSD calculations
 #concatenate RMSD logs
