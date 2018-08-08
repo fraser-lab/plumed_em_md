@@ -20,10 +20,10 @@ max_calc = int((frames*(frames-1))/2)
 #number of calcs per job
 calcs_per_job = int(max_calc/nproc)
 jobs = list(range(0,max_calc,calcs_per_job))
-
+print jobs
 for i,calculation in enumerate(jobs):
     if i+1 > len(jobs):
-        print(i,calculation,max_calc) 
+        print(i,calculation,max_calc)
     else:
         print(i,calculation,jobs[i+1])
 
