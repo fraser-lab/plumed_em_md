@@ -8,4 +8,4 @@ prefix = args.prefix
 import os
 
 os.system("gmx_mpi trjcat -f traj_comp?.xtc -o traj_all.xtc -cat")
-os.system("printf \"2\" | gmx_mpi trjconv -f traj_all.xtc -o {prefix}.xtc -pbc whole -s topol0.tpr".format(prefix=prefix))
+os.system("printf \"14\" | gmx_mpi trjconv -f traj_all.xtc -o {prefix}.xtc -pbc whole -s topol0.tpr".format(prefix=prefix))

@@ -3,7 +3,7 @@ import numpy
 import argparse
 
 parser = argparse.ArgumentParser()
-parser.add_argument("--pdb", help="starting conformation pdb",required=True)
+parser.add_argument("--pdb", help="starting conformation pdb, likely structure.pdb",required=True)
 parser.add_argument("--xtc", help="trajectory xtc file",required=True)
 args = parser.parse_args()
 reference_pdb = args.pdb
