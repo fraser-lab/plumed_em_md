@@ -4,7 +4,7 @@ import os
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--xtc", help="trajectory xtc file",required=True)
-parser.add_argument("--nproc", help="number of cores",type=intrequired=True)
+parser.add_argument("--nproc", help="number of cores",type=int,required=True)
 args = parser.parse_args()
 xtc = args.xtc
 nproc = args.nproc
