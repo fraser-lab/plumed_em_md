@@ -1,4 +1,4 @@
-import subprocess
+from subprocess import check_output
 import argparse
 
 parser = argparse.ArgumentParser()
@@ -8,9 +8,10 @@ xtc = args.xtc
 
 
 #GET NUMBER OF frames
-out = subprocess.check_output(["gmx_mpi check -f {xtc} | grep Box".format(xtc=xtc)],stderr=subprocess.STDOUT,shell=True)
-
-print(out)
+os.system("gmx_mpi check -f {xtc} 2> temp.txt".format(xtc=xtc))
+out = check_output(["grep Box temp.txt"],shell=True)
+frames = int(out.split()[-1])
+print(frames)
 #divide into number of processors
 #farm out RMSD calculations
 #concatenate RMSD logs
