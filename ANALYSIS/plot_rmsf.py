@@ -26,4 +26,5 @@ for replica in range(0,replicas):
 
     plt.plot(loop_ca.resnums, rmsfer.rmsf)
 
-plt.savefig("rmsf_all.png".format(replica=replica))
+plt.ylim(0,6)
+plt.savefig("rmsf_allreplicas.png".format(replica=replica))

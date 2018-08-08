@@ -9,7 +9,7 @@ u = MDAnalysis.Universe(sys.argv[1])
 # load XTC/DCD/TRR
 u.load_new(sys.argv[2])
 # all-heavy selector - or any other selection
-allheavy = u.select_atoms('type C N O S')
+allheavy = u.select_atoms('resid 36-48 and name CA')
 # number of frames
 n = len(u.trajectory)
 

@@ -48,4 +48,4 @@ for series in replicas:
     plt.plot(replicas[series]["times"],replicas[series]["rmsds"])
     plt.ylim(0,6)
     print(numpy.mean(replicas[series]["rmsds"][1:]),numpy.std(replicas[series]["rmsds"][1:]))
-plt.savefig("test.png")
+plt.savefig("traj_rmsd.png")
