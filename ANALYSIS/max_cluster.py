@@ -8,7 +8,7 @@ xtc = args.xtc
 
 
 #GET NUMBER OF frames
-out = check_output(["gmx_mpi check -f {xtc} | grep Box".format(xtc=xtc)],shell=True)
+out = check_output(["gmx_mpi check -f {xtc} | grep Box".format(xtc=xtc)],stderr=subprocess.STDOUT,shell=True)
 
 print(out)
 #divide into number of processors
