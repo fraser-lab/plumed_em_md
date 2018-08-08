@@ -18,7 +18,7 @@ frames = int(out.split()[-1])
 #max number of calculations k1 = N * ( N - 1 ) / 2
 max_calc = int((frames*(frames-1))/2)
 #number of calcs per job
-calcs_per_job = max_calc/nproc
+calcs_per_job = int(max_calc/nproc)
 jobs = list(range(0,max_calc,calcs_per_job))
 
 for i,calculation in enumerate(jobs):
