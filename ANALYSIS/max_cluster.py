@@ -1,4 +1,4 @@
-from subprocess import check_output
+import subprocess
 import argparse
 
 parser = argparse.ArgumentParser()
@@ -8,7 +8,7 @@ xtc = args.xtc
 
 
 #GET NUMBER OF frames
-out = check_output(["gmx_mpi check -f {xtc} | grep Box".format(xtc=xtc)],stderr=subprocess.STDOUT,shell=True)
+out = subprocess.check_output(["gmx_mpi check -f {xtc} | grep Box".format(xtc=xtc)],stderr=subprocess.STDOUT,shell=True)
 
 print(out)
 #divide into number of processors
