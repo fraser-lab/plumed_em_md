@@ -28,7 +28,7 @@ for j,time in enumerate(rmsd[1]):
     if last_time < time:
         print(last_time,time,rmsd[2][j],i)
         if rmsd[2][j] < 10:
-            # print (last_time,time,rmsd[2][j],i)
+            print (last_time,time,rmsd[2][j],i)
             replicas[i]["rmsds"].append(rmsd[2][j])
             replicas[i]["times"].append(rmsd[1][j])
         else:
