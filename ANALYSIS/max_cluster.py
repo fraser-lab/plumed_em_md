@@ -5,11 +5,12 @@ from multiprocessing import Pool
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--xtc", help="trajectory xtc file",required=True)
+parser.add_argument("--pdb", help="reference pdb file",required=True)
 parser.add_argument("--nproc", help="number of cores",type=int,required=True)
 args = parser.parse_args()
 xtc = args.xtc
 nproc = args.nproc
-
+pdb = args.pdb
 #GET NUMBER OF frames
 os.system("gmx_mpi check -f {xtc} 2> temp.txt".format(xtc=xtc))
 out = check_output(["grep Box temp.txt"],shell=True)
@@ -40,7 +41,7 @@ def calculate_rmsds(i):
         j = max_calc
     else:
         j = jobs[i+1]
-    os.system("python ~/plumed_em_md/ANALYSIS/traj_rmsd.py structure.pdb {xtc} {i}.log {start} {stop}".format(xtc=xtc,i=i,start=jobs[i],stop=j))
+    os.system("python ~/plumed_em_md/ANALYSIS/traj_rmsd.py {pdb} {xtc} {i}.log {start} {stop}".format(pdb=pdb,xtc=xtc,i=i,start=jobs[i],stop=j))
     return
 
 p = Pool(nproc)
