@@ -6,8 +6,11 @@ parser = argparse.ArgumentParser()
 parser.add_argument("--pdb", help="starting conformation pdb, likely structure.pdb",required=True)
 parser.add_argument("--xtc", help="trajectory xtc file",required=True)
 args = parser.parse_args()
+parser.add_argument("--output", help="output file prefix",required=True)
+args = parser.parse_args()
 reference_pdb = args.pdb
 xtc = args.xtc
+output = args.output
 
 u = MDAnalysis.Universe(reference_pdb)
 u.load_new(xtc)
@@ -48,4 +51,4 @@ for series in replicas:
     plt.plot(replicas[series]["times"],replicas[series]["rmsds"])
     plt.ylim(0,6)
     print(numpy.mean(replicas[series]["rmsds"][1:]),numpy.std(replicas[series]["rmsds"][1:]))
-plt.savefig("traj_rmsd.png")
+plt.savefig("{output}.png".format(output=output))
