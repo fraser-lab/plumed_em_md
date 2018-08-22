@@ -55,9 +55,25 @@ else:
     pass
 
 #cluster
-rms = 2.0
+rms = 2
 
 os.system("~/max_cluster.exe output.log 1 {rms} {frames}".format(frames=frames,rms=rms))
+
+clusters = []
+frames = []
+f = open("trajectory.dat")
+for line in f:
+    frame = int(line.split()[0])
+    cluster = int(line.split()[1])
+    print(cluster)
+    clusters.append(cluster)
+    frames.append(frame)
+
+import matplotlib.pyplot as plt
+
+plt.plot(frames,clusters,".")
+plt.ylim(-1,30)
+plt.savefig("clusters.png")
 
 #pull out exemplars
 #calcuate density in clusters by trajectory/replica

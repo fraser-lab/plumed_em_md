@@ -5,7 +5,6 @@ import argparse
 parser = argparse.ArgumentParser()
 parser.add_argument("--pdb", help="starting conformation pdb, likely structure.pdb",required=True)
 parser.add_argument("--xtc", help="trajectory xtc file",required=True)
-args = parser.parse_args()
 parser.add_argument("--output", help="output file prefix",required=True)
 args = parser.parse_args()
 reference_pdb = args.pdb
