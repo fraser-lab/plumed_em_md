@@ -55,7 +55,7 @@ else:
     pass
 
 #cluster
-rms = 2
+rms = 2.5
 
 os.system("~/max_cluster.exe output.log 1 {rms} {frames}".format(frames=frames,rms=rms))
 
