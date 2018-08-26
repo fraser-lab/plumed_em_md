@@ -2,7 +2,7 @@ xtcs = ["AC_NCS_med_0.xtc","AC_NCS_med_1.xtc","AC_NCS_med_2.xtc","AC_NCS_med_3.x
 
 pdbs = ["AC_NCS_structure.pdb","dAC_NCS_structure.pdb"]
 
-#COUNT 
+cluster_count = {}
 
 f = open("trajectory.dat")
 for line in f:
@@ -10,8 +10,18 @@ for line in f:
     cluster = line.split()[1]
     xtc_index = divmod(frame,1201)[0]
     frame_index = divmod(frame,1201)[1]
+    if xtc_index in cluster_count:
+        cluster_count[xtc_index][total] +=1
+    else:
+        cluster_count[xtc_index][total] = 1
+        cluster_count[xtc_index][first] = 0
+        cluster_count[xtc_index][second] = 0
+    if frame_index < 601:
+        cluster_count[xtc_index][first] +=1
+    else:
+        cluster_count[xtc_index][second] +=1
 
-
+print cluster_count
 # import MDAnalysis
 # u = MDAnalysis.Universe("structure_test.pdb")
 # u.load_new("both_med_bb.xtc")
