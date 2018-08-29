@@ -2,30 +2,39 @@ xtcs = ["AC_NCS_med_0.xtc","AC_NCS_med_1.xtc","AC_NCS_med_2.xtc","AC_NCS_med_3.x
 
 pdbs = ["AC_NCS_structure.pdb","dAC_NCS_structure.pdb"]
 
-cluster_count = {}
+import numpy
+# cluster_count = {}
+cluster_counter = numpy.zeros((16,26))
+ac_dc_counter = numpy.zeros((26,2))
+
 
 f = open("trajectory.dat")
 for line in f:
-    frame = line.split()[0]
-    cluster = line.split()[1]
+    frame = int(line.split()[0])
+    cluster = int(line.split()[1])
     xtc_index = divmod(frame,1201)[0]
     frame_index = divmod(frame,1201)[1]
-    if xtc_index in cluster_count:
-        cluster_count[xtc_index][total] +=1
+    cluster_counter[xtc_index][cluster] +=1
+    if "dAC" in xtcs[xtc_index]:
+        ac_dc_counter[cluster][1] +=1
     else:
-        cluster_count[xtc_index][total] = 1
-        cluster_count[xtc_index][first] = 0
-        cluster_count[xtc_index][second] = 0
-    if frame_index < 601:
-        cluster_count[xtc_index][first] +=1
-    else:
-        cluster_count[xtc_index][second] +=1
+        ac_dc_counter[cluster][0] +=1
+print(cluster_counter)
+print(ac_dc_counter)
 
-print cluster_count
-# import MDAnalysis
-# u = MDAnalysis.Universe("structure_test.pdb")
-# u.load_new("both_med_bb.xtc")
-#     # protein = u.select_atoms("resid 20-60")
-# for ts in u.trajectory:
-#     if u.trajectory.time == 0:
-#         print(ts.frame, u.trajectory.time)
+
+import matplotlib
+import matplotlib.pyplot as plt
+fig, ax = plt.subplots()
+im = ax.imshow(ac_dc_counter)
+ax.set_xticks(numpy.arange(2))
+ax.set_xticklabels(("A","D"))
+
+for i in range(26):
+    for j in range(2):
+        print(ac_dc_counter[i,j], end='\t')
+    print("")
+        # text = ax.text(j, i, ac_dc_counter[i, j],
+        #                ha="center", va="center", color="w")
+
+plt.savefig("ac_dc.png")
